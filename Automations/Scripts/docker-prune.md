@@ -52,3 +52,74 @@ docker image ls
 ```
 
 One more production consideration: because the log is under `/var/log`, the script needs suitable permissions to write there.
+
+
+This command redirects all output from the remaining script into the log file, including error messages.
+
+```
+exec >> "$LOGFILE" 2>&1
+```
+
+---
+
+### Why this  `exec >> "$LOGFILE" 2>&1`
+
+Let's break it down.
+
+### 1. `exec`
+
+In this context, `exec` changes the script's output redirection for subsequent commands.
+
+### 2. `>> "$LOGFILE"`
+
+`>>` means append output to the file instead of overwriting it.
+
+For example:
+
+```
+LOGFILE="/var/log/docker_image_cleanup.log"
+exec >> "$LOGFILE"
+echo "Cleanup started"
+echo "Cleanup completed"
+```
+
+Both messages are appended to the log file.
+
+### 3. `2>&1`
+
+Linux uses file descriptors:
+
+| Number | Meaning                  |
+| ------ | ------------------------ |
+| `0`    | Standard input (stdin)   |
+| `1`    | Standard output (stdout) |
+| `2`    | Standard error (stderr)  |
+
+`2>&1` means send standard error to wherever standard output is currently going.
+
+So error messages also go into the same log file.
+
+### How it works
+
+<img width="1146" height="500" alt="image" src="https://github.com/user-attachments/assets/afe1b21c-d18b-4b40-b643-e5299fba18d2" />
+
+
+
+### Why use this in your DevOps script?
+
+Instead of writing this after every command:
+
+```
+docker image prune -a -f >> "$LOGFILE" 2>&1
+echo "Cleanup completed" >> "$LOGFILE"
+```
+
+You write this once at the beginning:
+
+```
+exec >> "$LOGFILE" 2>&1
+```
+
+Then subsequent commands automatically send their normal output and errors to the log file.
+
+Remember: `>>` appends, `>` overwrites, and `2>&1` redirects errors to the same destination as standard output.
