@@ -28,6 +28,8 @@ sesha@Sesha-PC:/mnt/c/Myfolder/MyProjects/shell-scripting-projects$ echo $?
 
 # show the current process id
 echo $$
+1169
+
 
 ```
 
