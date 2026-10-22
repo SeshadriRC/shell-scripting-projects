@@ -1,5 +1,5 @@
 ```bash
-$, $?, awk, head, IFS
+$, $?, awk, head, IFS, grep
 ```
 
 
@@ -45,4 +45,27 @@ root 1
 
 # Print the first column from the output
 ps -ef | awk '{print $1}'
+```
+
+---
+
+## 3. grep
+
+```bash
+# command safely counts the number of matching lines in a single file without printing the matching lines themselves?
+grep -c "ERROR" app.log
+49
+
+# command safely counts the number of matching lines in multiple files
+grep -c "ERROR" *.log
+access.log:0
+api-service.json.log:99
+app.log:49
+auth.log:0
+database.log:8
+
+# only print the matched part
+grep -o "ERROR" app.log | head -2
+ERROR
+ERROR
 ```
