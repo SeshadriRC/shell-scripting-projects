@@ -1,5 +1,12 @@
+**Concepts**
+
+- Operators
+- IFS
+
+
+**In this document**
 ```bash
-$, $?, awk, head, IFS, grep
+$, $?, awk, head, grep
 ```
 
 
