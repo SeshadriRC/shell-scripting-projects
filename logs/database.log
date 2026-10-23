@@ -1,0 +1,524 @@
+2026-10-21 14:32:23.655 UTC [16350] LOG:  duration: 4895.845 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 14:32:23.655 UTC [16350] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 14:34:09.087 UTC [12757] LOG:  duration: 19.132 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 14:36:00.237 UTC [16184] LOG:  duration: 56.812 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 14:36:54.814 UTC [13324] LOG:  duration: 18.823 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 14:39:10.916 UTC [16194] LOG:  duration: 3424.697 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 14:39:10.916 UTC [16194] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 14:39:46.758 UTC [14841] LOG:  duration: 8.052 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 14:41:50.645 UTC [17196] LOG:  duration: 11.378 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 14:44:16.187 UTC [15981] LOG:  duration: 19.771 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 14:46:28.552 UTC [16637] LOG:  duration: 44.576 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 14:47:17.341 UTC [13225] LOG:  duration: 19.083 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 14:49:00.119 UTC [15011] LOG:  duration: 29.608 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 14:50:35.937 UTC [16172] LOG:  duration: 12.598 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 14:50:54.664 UTC [16509] LOG:  duration: 20.892 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 14:53:12.046 UTC [16356] LOG:  duration: 12.397 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 14:55:42.262 UTC [13421] LOG:  duration: 5.269 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 14:57:32.418 UTC [15194] LOG:  duration: 55.159 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 14:58:43.938 UTC [13240] LOG:  duration: 14.135 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 15:00:50.089 UTC [13585] LOG:  duration: 4894.393 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 15:00:50.089 UTC [13585] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 15:01:21.931 UTC [17265] LOG:  duration: 6.376 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 15:02:35.722 UTC [17877] LOG:  duration: 10.031 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 15:03:17.495 UTC [13871] LOG:  duration: 13.02 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 15:05:27.067 UTC [14698] LOG:  duration: 46.113 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 15:07:05.306 UTC [12461] LOG:  duration: 6.099 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 15:08:02.459 UTC [12713] LOG:  duration: 4904.858 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 15:08:02.459 UTC [12713] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 15:09:33.583 UTC [16428] LOG:  duration: 12.386 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 15:10:01.076 UTC [15589] LOG:  duration: 3428.582 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 15:10:01.076 UTC [15589] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 15:10:17.565 UTC [17136] LOG:  duration: 44.353 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 15:10:42.146 UTC [15216] LOG:  duration: 4894.393 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 15:10:42.146 UTC [15216] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 15:12:21.324 UTC [15828] LOG:  duration: 50.693 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 15:13:42.538 UTC [12284] LOG:  duration: 21.162 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 15:15:09.710 UTC [15505] LOG:  duration: 12.028 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 15:15:52.468 UTC [12503] LOG:  duration: 15.514 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 15:17:49.704 UTC [15298] LOG:  duration: 19.586 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 15:18:11.928 UTC [17400] LOG:  duration: 13.099 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 15:18:38.497 UTC [12193] LOG:  duration: 11.547 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 15:20:10.955 UTC [17002] LOG:  duration: 23.476 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 15:22:19.502 UTC [13165] LOG:  duration: 11.38 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 15:23:06.734 UTC [14046] LOG:  duration: 10.15 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 15:25:04.218 UTC [13085] LOG:  duration: 8.882 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 15:26:55.005 UTC [14263] LOG:  duration: 22.71 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 15:27:53.178 UTC [12365] ERROR:  deadlock detected
+2026-10-21 15:27:53.178 UTC [12365] DETAIL:  Process 12365 waits for ShareLock on transaction 891283; blocked by process 12366.
+2026-10-21 15:28:17.368 UTC [17229] LOG:  duration: 12.253 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 15:30:00.096 UTC [13399] LOG:  duration: 51.477 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 15:31:33.425 UTC [15973] LOG:  duration: 12.493 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 15:31:55.088 UTC [14323] LOG:  duration: 10.584 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 15:32:25.886 UTC [12767] LOG:  duration: 6.975 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 15:33:22.609 UTC [12834] LOG:  duration: 57.379 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 15:35:18.500 UTC [16937] LOG:  duration: 23.638 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 15:35:40.349 UTC [14488] LOG:  duration: 3427.226 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 15:35:40.349 UTC [14488] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 15:37:03.894 UTC [16938] LOG:  duration: 26.896 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 15:38:54.323 UTC [12000] LOG:  duration: 14.321 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 15:39:38.894 UTC [12387] LOG:  duration: 4894.056 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 15:39:38.894 UTC [12387] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 15:41:55.119 UTC [15175] ERROR:  deadlock detected
+2026-10-21 15:41:55.119 UTC [15175] DETAIL:  Process 15175 waits for ShareLock on transaction 891283; blocked by process 15176.
+2026-10-21 15:42:30.843 UTC [16214] LOG:  duration: 30.642 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 15:43:29.283 UTC [17817] LOG:  duration: 10.515 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 15:43:51.552 UTC [17162] LOG:  duration: 3418.692 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 15:43:51.552 UTC [17162] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 15:45:57.339 UTC [12591] LOG:  duration: 18.92 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 15:47:12.687 UTC [14297] LOG:  duration: 47.382 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 15:48:24.809 UTC [12468] LOG:  duration: 16.615 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 15:49:57.673 UTC [15718] LOG:  duration: 47.084 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 15:52:03.052 UTC [15591] LOG:  duration: 23.407 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 15:52:34.312 UTC [15674] LOG:  duration: 4896.323 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 15:52:34.312 UTC [15674] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 15:54:09.042 UTC [12299] LOG:  duration: 8.162 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 15:56:11.192 UTC [13966] LOG:  duration: 4898.626 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 15:56:11.192 UTC [13966] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 15:58:11.997 UTC [14405] LOG:  duration: 19.461 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 15:58:59.437 UTC [13325] LOG:  duration: 8.984 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 16:00:56.647 UTC [15727] LOG:  duration: 46.3 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 16:03:19.867 UTC [13373] LOG:  duration: 3432.351 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 16:03:19.867 UTC [13373] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:04:28.450 UTC [17448] LOG:  duration: 18.891 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 16:06:23.083 UTC [16925] LOG:  duration: 3422.204 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 16:06:23.083 UTC [16925] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:07:00.601 UTC [17391] LOG:  duration: 4.82 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 16:07:24.375 UTC [17504] LOG:  duration: 4896.09 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 16:07:24.375 UTC [17504] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:07:53.490 UTC [13803] LOG:  duration: 32.852 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 16:09:08.776 UTC [17297] LOG:  duration: 28.11 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 16:10:25.510 UTC [14282] LOG:  duration: 8.161 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 16:12:51.025 UTC [16223] LOG:  duration: 18.686 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 16:15:07.691 UTC [14895] LOG:  duration: 4899.256 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 16:15:07.691 UTC [14895] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:15:58.019 UTC [13366] LOG:  duration: 10.812 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 16:18:14.864 UTC [14737] LOG:  duration: 3427.991 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 16:18:14.864 UTC [14737] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:20:13.159 UTC [12744] LOG:  duration: 51.177 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 16:20:35.699 UTC [16856] LOG:  duration: 13.438 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 16:21:45.006 UTC [13409] LOG:  duration: 23.072 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 16:22:21.374 UTC [15156] LOG:  duration: 4898.853 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 16:22:21.374 UTC [15156] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:24:47.129 UTC [12113] LOG:  duration: 3420.379 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 16:24:47.129 UTC [12113] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:25:36.454 UTC [16787] LOG:  duration: 8.686 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 16:27:53.008 UTC [13107] LOG:  duration: 4891.347 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 16:27:53.008 UTC [13107] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:29:08.546 UTC [15917] LOG:  duration: 19.532 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 16:31:36.177 UTC [15842] LOG:  duration: 3428.502 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 16:31:36.177 UTC [15842] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:33:09.684 UTC [13479] LOG:  duration: 4892.967 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 16:33:09.684 UTC [13479] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:34:22.386 UTC [15337] LOG:  duration: 49.83 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 16:34:55.763 UTC [14232] LOG:  duration: 3428.358 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 16:34:55.763 UTC [14232] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:35:32.131 UTC [17285] LOG:  duration: 4895.48 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 16:35:32.131 UTC [17285] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:36:08.941 UTC [12852] LOG:  duration: 30.378 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 16:37:06.119 UTC [17352] LOG:  duration: 4900.713 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 16:37:06.119 UTC [17352] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:37:39.652 UTC [16865] LOG:  duration: 26.095 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 16:38:05.551 UTC [14308] LOG:  duration: 11.538 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 16:38:38.779 UTC [15467] LOG:  duration: 4897.376 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 16:38:38.779 UTC [15467] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:39:38.476 UTC [17009] LOG:  duration: 31.647 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 16:41:58.586 UTC [17259] LOG:  duration: 11.294 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 16:44:07.994 UTC [17237] LOG:  duration: 13.046 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 16:46:17.569 UTC [14719] LOG:  duration: 12.044 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 16:48:20.422 UTC [14954] LOG:  duration: 4890.575 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 16:48:20.422 UTC [14954] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:49:34.621 UTC [15032] LOG:  duration: 13.479 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 16:50:07.195 UTC [15158] LOG:  duration: 3427.119 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 16:50:07.195 UTC [15158] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:51:28.848 UTC [15009] LOG:  duration: 13.679 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 16:51:39.395 UTC [16421] LOG:  duration: 20.418 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 16:51:54.648 UTC [17286] LOG:  duration: 52.804 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 16:52:18.536 UTC [13391] LOG:  duration: 23.38 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 16:53:40.159 UTC [12507] LOG:  duration: 12.718 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 16:56:04.597 UTC [17554] LOG:  duration: 46.852 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 16:57:58.946 UTC [17005] LOG:  duration: 3419.595 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 16:57:58.946 UTC [17005] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 16:58:21.792 UTC [15168] LOG:  duration: 14.751 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 16:59:39.892 UTC [15133] LOG:  duration: 16.057 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 16:59:52.318 UTC [13051] LOG:  duration: 12.379 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 17:00:42.964 UTC [13760] LOG:  duration: 14.08 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 17:01:56.775 UTC [12176] LOG:  duration: 3418.822 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 17:01:56.775 UTC [12176] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:03:19.888 UTC [17070] LOG:  duration: 4901.347 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 17:03:19.888 UTC [17070] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:04:44.218 UTC [16150] LOG:  duration: 18.927 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 17:06:48.002 UTC [13423] LOG:  duration: 3426.222 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 17:06:48.002 UTC [13423] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:07:21.807 UTC [12199] ERROR:  deadlock detected
+2026-10-21 17:07:21.807 UTC [12199] DETAIL:  Process 12199 waits for ShareLock on transaction 891283; blocked by process 12200.
+2026-10-21 17:07:43.509 UTC [13939] LOG:  duration: 13.938 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 17:08:26.381 UTC [12298] LOG:  duration: 55.979 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 17:10:05.195 UTC [16407] LOG:  duration: 18.181 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 17:10:42.573 UTC [12164] LOG:  duration: 19.947 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 17:11:13.256 UTC [13710] LOG:  duration: 4893.521 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 17:11:13.256 UTC [13710] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:12:03.649 UTC [13204] LOG:  duration: 9.752 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 17:13:58.791 UTC [14488] LOG:  duration: 3422.545 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 17:13:58.791 UTC [14488] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:16:01.383 UTC [13426] LOG:  duration: 19.92 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 17:16:50.982 UTC [13246] LOG:  duration: 3430.663 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 17:16:50.982 UTC [13246] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:17:55.704 UTC [17625] LOG:  duration: 11.377 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 17:20:06.576 UTC [14624] LOG:  duration: 3426.172 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 17:20:06.576 UTC [14624] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:21:11.309 UTC [15191] LOG:  duration: 25.033 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 17:22:52.673 UTC [13800] LOG:  duration: 49.881 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 17:24:13.821 UTC [17782] LOG:  duration: 18.986 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 17:26:41.615 UTC [13123] LOG:  duration: 11.653 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 17:28:37.909 UTC [16583] LOG:  duration: 49.722 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 17:30:43.541 UTC [16027] LOG:  duration: 49.777 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 17:31:54.818 UTC [16239] LOG:  duration: 3418.706 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 17:31:54.818 UTC [16239] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:33:53.639 UTC [16157] LOG:  duration: 17.071 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 17:36:14.891 UTC [12616] LOG:  duration: 32.509 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 17:37:22.322 UTC [15676] LOG:  duration: 53.541 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 17:38:40.442 UTC [12738] LOG:  duration: 3426.591 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 17:38:40.442 UTC [12738] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:40:19.804 UTC [16016] LOG:  duration: 26.377 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 17:42:37.959 UTC [15236] LOG:  duration: 4902.334 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 17:42:37.959 UTC [15236] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:44:06.444 UTC [17676] LOG:  duration: 16.351 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 17:45:29.787 UTC [16516] LOG:  duration: 3428.296 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 17:45:29.787 UTC [16516] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:46:56.431 UTC [14532] LOG:  duration: 3422.95 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 17:46:56.431 UTC [14532] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:48:45.065 UTC [16482] LOG:  duration: 21.188 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 17:50:10.284 UTC [13567] LOG:  duration: 27.153 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 17:51:38.452 UTC [17957] LOG:  duration: 54.428 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 17:53:31.049 UTC [12573] LOG:  duration: 4888.832 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 17:53:31.049 UTC [12573] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:55:28.479 UTC [16258] LOG:  duration: 18.856 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 17:55:55.087 UTC [13750] LOG:  duration: 4902.221 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 17:55:55.087 UTC [13750] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 17:57:52.482 UTC [15849] LOG:  duration: 24.082 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 17:59:03.060 UTC [16252] LOG:  duration: 20.024 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 17:59:39.643 UTC [15716] LOG:  duration: 3419.889 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 17:59:39.643 UTC [15716] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 18:01:54.508 UTC [12763] LOG:  duration: 17.617 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 18:02:59.344 UTC [14158] LOG:  duration: 16.767 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 18:03:44.104 UTC [14420] LOG:  duration: 4893.12 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 18:03:44.104 UTC [14420] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 18:05:34.277 UTC [16539] LOG:  duration: 4903.481 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 18:05:34.277 UTC [16539] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 18:05:53.802 UTC [12393] LOG:  duration: 4894.851 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 18:05:53.802 UTC [12393] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 18:06:23.453 UTC [13950] LOG:  duration: 46.607 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 18:07:35.914 UTC [14942] LOG:  duration: 9.086 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 18:08:48.647 UTC [12527] LOG:  duration: 22.151 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 18:10:46.829 UTC [12962] ERROR:  deadlock detected
+2026-10-21 18:10:46.829 UTC [12962] DETAIL:  Process 12962 waits for ShareLock on transaction 891283; blocked by process 12963.
+2026-10-21 18:12:10.331 UTC [16209] LOG:  duration: 3421.413 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 18:12:10.331 UTC [16209] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 18:12:31.091 UTC [12234] LOG:  duration: 3432.85 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 18:12:31.091 UTC [12234] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 18:12:57.428 UTC [15542] LOG:  duration: 11.999 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 18:13:42.855 UTC [17492] LOG:  duration: 14.949 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 18:15:04.960 UTC [12435] LOG:  duration: 48.895 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 18:17:13.693 UTC [17524] LOG:  duration: 25.245 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 18:19:35.526 UTC [16179] LOG:  duration: 6.011 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 18:20:31.743 UTC [15754] LOG:  duration: 23.985 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 18:21:53.862 UTC [17783] LOG:  duration: 11.471 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 18:22:59.037 UTC [15050] LOG:  duration: 14.952 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 18:24:06.177 UTC [16505] LOG:  duration: 23.302 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 18:25:10.943 UTC [16563] LOG:  duration: 43.816 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 18:27:28.546 UTC [12804] LOG:  duration: 11.896 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 18:28:16.157 UTC [17240] LOG:  duration: 44.408 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 18:28:51.909 UTC [16038] ERROR:  deadlock detected
+2026-10-21 18:28:51.909 UTC [16038] DETAIL:  Process 16038 waits for ShareLock on transaction 891283; blocked by process 16039.
+2026-10-21 18:31:18.781 UTC [12440] LOG:  duration: 27.23 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 18:33:09.012 UTC [15693] LOG:  duration: 45.39 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 18:33:57.374 UTC [13381] LOG:  duration: 20.05 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 18:35:57.045 UTC [15715] LOG:  duration: 3426.011 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 18:35:57.045 UTC [15715] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 18:37:44.409 UTC [15387] LOG:  duration: 14.073 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 18:38:30.273 UTC [16207] LOG:  duration: 4898.101 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 18:38:30.273 UTC [16207] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 18:39:26.807 UTC [15418] LOG:  duration: 17.241 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 18:40:43.529 UTC [17416] LOG:  duration: 20.42 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 18:41:51.882 UTC [16955] LOG:  duration: 7.764 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 18:43:49.242 UTC [17969] LOG:  duration: 4896.7 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 18:43:49.242 UTC [17969] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 18:44:13.062 UTC [13514] LOG:  duration: 4892.368 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 18:44:13.062 UTC [13514] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 18:45:40.515 UTC [13243] LOG:  duration: 24.124 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 18:46:55.870 UTC [15951] LOG:  duration: 30.779 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 18:48:01.717 UTC [16050] LOG:  duration: 17.505 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 18:50:23.276 UTC [13333] LOG:  duration: 4891.893 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 18:50:23.276 UTC [13333] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 18:51:41.173 UTC [12866] LOG:  duration: 17.842 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 18:53:04.516 UTC [15177] LOG:  duration: 32.85 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 18:54:36.674 UTC [14874] LOG:  duration: 18.065 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 18:56:11.885 UTC [13389] LOG:  duration: 15.908 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 18:57:48.116 UTC [14659] LOG:  duration: 4894.967 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 18:57:48.116 UTC [14659] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 18:58:45.751 UTC [15765] LOG:  duration: 19.33 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 19:00:41.937 UTC [15624] LOG:  duration: 4888.92 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 19:00:41.937 UTC [15624] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:02:03.459 UTC [17774] LOG:  duration: 48.028 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 19:02:30.749 UTC [14243] LOG:  duration: 3418.79 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 19:02:30.749 UTC [14243] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:03:35.237 UTC [15388] LOG:  duration: 22.869 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 19:04:43.628 UTC [12151] LOG:  duration: 3422.027 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 19:04:43.628 UTC [12151] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:06:55.187 UTC [12255] LOG:  duration: 21.159 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 19:07:40.353 UTC [12777] LOG:  duration: 4890.468 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 19:07:40.353 UTC [12777] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:09:08.889 UTC [13058] LOG:  duration: 26.023 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 19:10:53.431 UTC [12002] LOG:  duration: 50.811 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 19:11:22.312 UTC [15869] LOG:  duration: 19.28 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 19:12:09.564 UTC [13279] LOG:  duration: 9.014 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 19:14:02.389 UTC [12608] LOG:  duration: 22.489 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 19:15:51.514 UTC [15418] LOG:  duration: 14.34 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 19:16:35.233 UTC [12972] LOG:  duration: 17.587 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 19:17:54.727 UTC [12459] LOG:  duration: 3419.48 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 19:17:54.727 UTC [12459] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:18:33.341 UTC [12825] LOG:  duration: 3420.867 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 19:18:33.341 UTC [12825] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:19:27.195 UTC [16353] LOG:  duration: 3432.917 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 19:19:27.195 UTC [16353] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:21:44.296 UTC [17583] LOG:  duration: 3424.967 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 19:21:44.296 UTC [17583] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:24:03.100 UTC [14998] LOG:  duration: 3432.794 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 19:24:03.100 UTC [14998] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:25:24.964 UTC [17338] LOG:  duration: 14.079 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 19:25:43.644 UTC [14046] LOG:  duration: 16.58 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 19:26:26.009 UTC [13276] LOG:  duration: 23.492 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 19:27:23.432 UTC [16285] LOG:  duration: 56.091 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 19:27:41.785 UTC [12173] LOG:  duration: 12.527 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 19:28:19.592 UTC [17178] LOG:  duration: 4.28 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 19:30:41.325 UTC [13715] LOG:  duration: 50.413 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 19:31:04.195 UTC [15039] LOG:  duration: 13.508 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 19:31:21.703 UTC [15108] LOG:  duration: 55.986 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 19:33:12.256 UTC [16955] LOG:  duration: 4.308 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 19:33:37.715 UTC [16731] LOG:  duration: 18.96 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 19:34:13.398 UTC [16640] LOG:  duration: 50.422 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 19:35:07.883 UTC [17562] LOG:  duration: 3425.194 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 19:35:07.883 UTC [17562] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:35:59.142 UTC [16622] LOG:  duration: 22.874 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 19:37:18.794 UTC [16178] LOG:  duration: 16.519 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 19:38:43.376 UTC [16602] LOG:  duration: 15.254 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 19:40:32.663 UTC [17123] LOG:  duration: 3431.642 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 19:40:32.663 UTC [17123] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:42:09.328 UTC [16449] LOG:  duration: 7.938 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 19:43:45.049 UTC [15048] LOG:  duration: 4895.895 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 19:43:45.049 UTC [15048] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:45:00.826 UTC [14507] LOG:  duration: 29.768 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 19:47:02.650 UTC [17883] LOG:  duration: 3434.935 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 19:47:02.650 UTC [17883] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 19:49:13.772 UTC [12884] LOG:  duration: 17.967 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 19:50:22.398 UTC [14825] LOG:  duration: 10.231 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 19:51:55.137 UTC [16254] LOG:  duration: 11.54 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 19:54:07.255 UTC [13428] ERROR:  deadlock detected
+2026-10-21 19:54:07.255 UTC [13428] DETAIL:  Process 13428 waits for ShareLock on transaction 891283; blocked by process 13429.
+2026-10-21 19:54:32.609 UTC [14409] LOG:  duration: 19.66 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 19:54:48.446 UTC [16146] LOG:  duration: 15.494 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 19:55:30.326 UTC [12113] LOG:  duration: 21.125 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 19:56:51.162 UTC [14633] LOG:  duration: 7.376 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 19:58:28.596 UTC [16500] LOG:  duration: 10.236 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 19:59:01.838 UTC [13242] LOG:  duration: 3430.094 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 19:59:01.838 UTC [13242] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 20:00:03.273 UTC [15448] LOG:  duration: 22.349 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 20:02:28.728 UTC [12108] LOG:  duration: 5.147 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 20:04:25.513 UTC [13877] LOG:  duration: 19.778 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 20:05:20.948 UTC [14872] LOG:  duration: 4897.169 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 20:05:20.948 UTC [14872] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 20:06:56.312 UTC [14031] LOG:  duration: 22.744 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 20:07:54.028 UTC [17120] LOG:  duration: 10.36 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 20:08:18.405 UTC [13697] LOG:  duration: 16.082 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 20:09:39.918 UTC [16675] LOG:  duration: 4894.456 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 20:09:39.918 UTC [16675] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 20:10:15.560 UTC [15611] LOG:  duration: 23.822 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 20:11:13.660 UTC [14812] LOG:  duration: 14.2 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 20:12:14.541 UTC [13450] LOG:  duration: 30.736 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 20:12:25.105 UTC [14794] LOG:  duration: 4905.09 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 20:12:25.105 UTC [14794] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 20:13:56.539 UTC [16075] LOG:  duration: 4888.761 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 20:13:56.539 UTC [16075] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 20:16:08.018 UTC [13396] LOG:  duration: 4903.224 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 20:16:08.018 UTC [13396] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 20:18:04.417 UTC [15272] LOG:  duration: 13.344 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 20:18:29.016 UTC [13163] LOG:  duration: 18.995 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 20:19:32.652 UTC [13094] LOG:  duration: 3419.755 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 20:19:32.652 UTC [13094] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 20:21:13.548 UTC [12684] LOG:  duration: 28.345 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 20:23:26.242 UTC [16429] LOG:  duration: 17.771 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 20:24:39.904 UTC [16260] LOG:  duration: 7.847 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 20:25:30.097 UTC [13141] LOG:  duration: 50.51 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 20:26:52.325 UTC [13365] LOG:  duration: 21.85 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 20:28:53.842 UTC [17212] LOG:  duration: 17.527 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 20:29:12.209 UTC [12858] LOG:  duration: 4897.648 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 20:29:12.209 UTC [12858] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 20:29:54.425 UTC [12881] LOG:  duration: 26.383 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 20:31:49.010 UTC [12771] LOG:  duration: 49.29 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 20:33:55.435 UTC [15345] LOG:  duration: 56.566 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 20:35:06.735 UTC [16837] LOG:  duration: 43.93 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 20:35:30.531 UTC [17912] LOG:  duration: 7.883 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 20:36:43.782 UTC [13200] LOG:  duration: 18.732 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 20:38:47.540 UTC [15630] LOG:  duration: 9.305 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 20:40:30.289 UTC [13480] LOG:  duration: 23.755 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 20:42:00.629 UTC [15855] LOG:  duration: 4903.394 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 20:42:00.629 UTC [15855] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 20:43:15.142 UTC [16733] LOG:  duration: 16.216 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 20:45:44.359 UTC [12011] LOG:  duration: 14.007 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 20:48:13.738 UTC [12451] LOG:  duration: 14.406 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 20:50:30.431 UTC [17398] LOG:  duration: 18.356 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 20:51:29.562 UTC [17251] LOG:  duration: 4891.961 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 20:51:29.562 UTC [17251] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 20:53:42.811 UTC [13624] LOG:  duration: 4894.943 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 20:53:42.811 UTC [13624] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 20:53:57.273 UTC [12333] LOG:  duration: 9.736 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 20:54:33.863 UTC [16301] LOG:  duration: 16.966 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 20:56:15.252 UTC [12395] LOG:  duration: 58.775 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 20:57:56.114 UTC [17037] LOG:  duration: 30.784 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 20:59:11.933 UTC [16761] LOG:  duration: 3423.077 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 20:59:11.933 UTC [16761] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:00:21.652 UTC [14072] LOG:  duration: 3427.661 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:00:21.652 UTC [14072] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:00:40.904 UTC [17445] LOG:  duration: 59.488 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 21:01:54.592 UTC [13443] LOG:  duration: 17.455 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 21:03:32.348 UTC [15534] LOG:  duration: 48.959 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 21:05:03.080 UTC [16638] LOG:  duration: 22.1 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 21:06:46.683 UTC [16186] LOG:  duration: 15.977 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 21:07:21.159 UTC [13447] LOG:  duration: 29.127 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 21:07:32.503 UTC [12914] LOG:  duration: 3423.392 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:07:32.503 UTC [12914] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:07:46.643 UTC [12681] LOG:  duration: 16.299 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 21:08:17.076 UTC [12753] LOG:  duration: 31.393 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 21:09:18.887 UTC [13010] LOG:  duration: 3424.225 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:09:18.887 UTC [13010] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:11:38.447 UTC [16572] LOG:  duration: 3431.189 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:11:38.447 UTC [16572] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:13:38.697 UTC [16951] LOG:  duration: 3418.778 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:13:38.697 UTC [16951] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:14:29.055 UTC [14031] LOG:  duration: 5.259 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 21:15:54.944 UTC [14998] LOG:  duration: 8.918 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 21:18:19.262 UTC [12861] LOG:  duration: 16.845 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 21:19:43.810 UTC [14449] LOG:  duration: 54.545 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 21:20:49.206 UTC [12326] LOG:  duration: 4895.749 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 21:20:49.206 UTC [12326] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:21:27.424 UTC [12147] LOG:  duration: 4892.692 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 21:21:27.424 UTC [12147] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:23:51.310 UTC [14970] LOG:  duration: 11.55 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 21:26:00.183 UTC [15074] LOG:  duration: 58.31 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 21:27:50.449 UTC [16758] LOG:  duration: 12.853 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 21:28:31.015 UTC [15229] LOG:  duration: 11.993 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 21:30:20.785 UTC [12608] LOG:  duration: 4894.936 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 21:30:20.785 UTC [12608] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:31:15.655 UTC [12192] LOG:  duration: 3418.214 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:31:15.655 UTC [12192] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:32:26.857 UTC [15682] LOG:  duration: 25.405 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 21:33:01.274 UTC [12937] LOG:  duration: 10.573 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 21:33:56.106 UTC [16865] LOG:  duration: 10.734 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 21:34:41.006 UTC [17427] LOG:  duration: 20.954 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 21:36:23.628 UTC [16984] LOG:  duration: 3421.938 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:36:23.628 UTC [16984] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:36:45.927 UTC [16403] LOG:  duration: 15.357 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 21:39:02.819 UTC [14082] LOG:  duration: 25.743 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 21:41:19.979 UTC [13111] LOG:  duration: 16.569 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 21:41:33.712 UTC [12233] LOG:  duration: 26.01 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 21:42:34.889 UTC [17948] LOG:  duration: 15.765 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 21:44:49.406 UTC [12918] LOG:  duration: 4890.957 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 21:44:49.406 UTC [12918] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:45:13.796 UTC [17213] LOG:  duration: 6.108 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 21:46:16.931 UTC [17604] LOG:  duration: 3420.248 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:46:16.931 UTC [17604] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:47:10.463 UTC [16264] LOG:  duration: 3431.362 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:47:10.463 UTC [16264] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:48:28.780 UTC [13535] LOG:  duration: 5.748 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 21:49:21.101 UTC [17477] LOG:  duration: 17.194 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 21:50:36.342 UTC [13470] LOG:  duration: 3421.669 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:50:36.342 UTC [13470] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:51:04.638 UTC [17210] LOG:  duration: 3428.466 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:51:04.638 UTC [17210] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:52:48.156 UTC [14422] LOG:  duration: 12.346 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 21:53:55.701 UTC [12365] LOG:  duration: 30.605 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 21:55:23.480 UTC [17986] LOG:  duration: 8.551 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 21:57:09.902 UTC [16642] LOG:  duration: 3431.365 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:57:09.902 UTC [16642] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:57:41.188 UTC [17966] LOG:  duration: 4896.019 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 21:57:41.188 UTC [17966] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 21:58:25.880 UTC [14459] LOG:  duration: 18.596 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 21:58:38.390 UTC [15812] LOG:  duration: 3423.262 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 21:58:38.390 UTC [15812] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:00:59.539 UTC [14815] LOG:  duration: 7.057 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 22:02:26.992 UTC [15791] LOG:  duration: 21.787 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 22:03:34.751 UTC [12569] LOG:  duration: 6.511 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 22:06:03.173 UTC [16655] LOG:  duration: 55.992 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 22:08:11.803 UTC [14564] LOG:  duration: 7.597 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 22:10:14.145 UTC [16395] LOG:  duration: 54.581 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 22:10:55.773 UTC [13857] LOG:  duration: 3428.96 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 22:10:55.773 UTC [13857] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:11:24.417 UTC [16657] LOG:  duration: 4904.234 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 22:11:24.417 UTC [16657] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:11:49.777 UTC [12846] LOG:  duration: 10.99 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 22:13:34.398 UTC [16592] LOG:  duration: 21.275 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 22:15:48.830 UTC [14008] LOG:  duration: 3429.5 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 22:15:48.830 UTC [14008] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:16:10.696 UTC [17301] LOG:  duration: 4891.517 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 22:16:10.696 UTC [17301] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:17:25.958 UTC [15851] LOG:  duration: 57.554 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 22:17:38.154 UTC [13555] LOG:  duration: 47.239 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 22:18:31.674 UTC [14286] LOG:  duration: 48.32 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 22:20:16.374 UTC [14600] ERROR:  deadlock detected
+2026-10-21 22:20:16.374 UTC [14600] DETAIL:  Process 14600 waits for ShareLock on transaction 891283; blocked by process 14601.
+2026-10-21 22:22:05.816 UTC [15821] LOG:  duration: 4903.589 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 22:22:05.816 UTC [15821] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:22:58.325 UTC [12572] LOG:  duration: 56.714 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 22:23:46.891 UTC [15228] LOG:  duration: 51.235 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 22:24:17.464 UTC [17416] LOG:  duration: 8.982 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 22:25:47.100 UTC [15513] LOG:  duration: 15.347 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 22:26:09.753 UTC [12069] LOG:  duration: 18.329 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 22:27:20.339 UTC [14765] ERROR:  deadlock detected
+2026-10-21 22:27:20.339 UTC [14765] DETAIL:  Process 14765 waits for ShareLock on transaction 891283; blocked by process 14766.
+2026-10-21 22:28:42.602 UTC [15335] LOG:  duration: 7.521 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 22:29:34.501 UTC [13530] LOG:  duration: 4900.094 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 22:29:34.501 UTC [13530] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:31:48.252 UTC [12036] LOG:  duration: 54.473 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 22:32:04.939 UTC [14376] LOG:  duration: 18.506 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 22:33:45.486 UTC [13539] LOG:  duration: 20.27 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 22:34:33.291 UTC [16653] LOG:  duration: 14.545 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 22:35:01.938 UTC [17170] LOG:  duration: 25.476 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 22:36:06.076 UTC [14449] LOG:  duration: 31.922 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 22:37:30.434 UTC [12143] LOG:  duration: 4901.828 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 22:37:30.434 UTC [12143] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:37:44.982 UTC [14970] LOG:  duration: 4903.725 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 22:37:44.982 UTC [14970] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:38:27.083 UTC [16197] LOG:  duration: 19.317 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 22:39:15.854 UTC [12519] LOG:  duration: 4904.438 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 22:39:15.854 UTC [12519] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:41:21.388 UTC [15440] LOG:  duration: 5.656 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 22:43:42.657 UTC [15216] LOG:  duration: 19.816 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 22:44:47.879 UTC [14903] LOG:  duration: 29.398 ms  statement: SELECT pg_stat_activity.* FROM pg_stat_activity WHERE state != 'idle';
+2026-10-21 22:46:27.484 UTC [17386] LOG:  duration: 4898.755 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 22:46:27.484 UTC [17386] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:48:21.371 UTC [13113] LOG:  duration: 3426.471 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 22:48:21.371 UTC [13113] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:48:41.948 UTC [15418] LOG:  duration: 3430.206 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 22:48:41.948 UTC [15418] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:50:01.504 UTC [15948] LOG:  duration: 19.332 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 22:51:55.239 UTC [12835] LOG:  duration: 3423.486 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 22:51:55.239 UTC [12835] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:53:23.388 UTC [17840] LOG:  duration: 4891.369 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 22:53:23.388 UTC [17840] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:55:08.613 UTC [17717] LOG:  duration: 4893.273 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 22:55:08.613 UTC [17717] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:56:24.934 UTC [16859] LOG:  duration: 21.644 ms  statement: SELECT * FROM users WHERE status = 'ACTIVE' ORDER BY created_at DESC LIMIT 50;
+2026-10-21 22:56:49.357 UTC [13445] LOG:  duration: 3421.193 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 22:56:49.357 UTC [13445] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 22:58:53.553 UTC [15349] LOG:  duration: 21.764 ms  statement: UPDATE inventory SET stock = stock - 1 WHERE product_id = 4521;
+2026-10-21 22:59:46.041 UTC [17010] LOG:  duration: 6.085 ms  statement: INSERT INTO cart_items (cart_id, item_id, quantity) VALUES (4091, 102, 1);
+2026-10-21 23:00:09.176 UTC [15105] LOG:  duration: 3431.069 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 23:00:09.176 UTC [15105] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 23:01:47.527 UTC [13486] LOG:  duration: 3427.952 ms  statement: SELECT * FROM audit_logs WHERE payload LIKE '%password%' ORDER BY id DESC;
+2026-10-21 23:01:47.527 UTC [13486] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 23:02:11.692 UTC [12190] LOG:  duration: 4900.126 ms  statement: SELECT o.id, c.name, sum(i.price * i.quantity) FROM orders o JOIN customers c ON o.customer_id = c.id JOIN items i ON i.order_id = o.id GROUP BY o.id, c.name ORDER BY sum DESC LIMIT 100;
+2026-10-21 23:02:11.692 UTC [12190] WARNING:  query execution time exceeded 1000ms threshold
+2026-10-21 23:02:29.234 UTC [14649] LOG:  duration: 43.472 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 23:04:00.605 UTC [17114] LOG:  duration: 55.946 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';
+2026-10-21 23:05:52.916 UTC [16526] LOG:  duration: 45.476 ms  statement: SELECT count(*) FROM orders WHERE order_date >= '2026-10-01';

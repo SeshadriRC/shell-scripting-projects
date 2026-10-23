@@ -1,0 +1,1106 @@
+2026-10-21 16:30:28.640 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_928094] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 16:30:42.400 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_324978] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 16:30:58.335 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_157202] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 16:31:23.085 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_822177] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 16:31:36.145 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_316190] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 16:32:06.208 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_465000] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 16:32:43.777 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_697415] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 16:33:04.556 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_715916] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 16:33:37.682 [http-nio-8080-exec-2] WARN  c.e.service.MetricsWatcher - [trace_id=trace_797572] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 16:33:54.975 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_655529] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 16:34:09.737 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_207161] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 16:34:19.152 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_206021] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 16:35:01.735 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_251640] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 16:35:40.306 [http-nio-8080-exec-10] WARN  c.e.service.MetricsWatcher - [trace_id=trace_845652] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 16:36:00.544 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_273345] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 16:36:34.790 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_721228] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 16:36:57.778 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_374276] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 16:37:40.322 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_921693] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 16:38:24.200 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_629991] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 16:38:45.107 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_856716] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 16:38:54.215 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_224640] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 16:39:23.705 [http-nio-8080-exec-7] WARN  c.e.service.MetricsWatcher - [trace_id=trace_455023] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 16:40:08.112 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_827920] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 16:40:51.224 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_661288] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 16:41:33.979 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_563661] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 16:42:19.870 [http-nio-8080-exec-5] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_307449] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 16:42:58.988 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_643992] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 16:43:34.659 [http-nio-8080-exec-2] WARN  c.e.service.MetricsWatcher - [trace_id=trace_473822] Kafka consumer lag high on partition 2: 1250 messages behind
+2026-10-21 16:44:12.020 [http-nio-8080-exec-3] WARN  c.e.service.MetricsWatcher - [trace_id=trace_182771] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 16:44:56.320 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_726232] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 16:45:33.567 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_811432] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 16:46:04.660 [http-nio-8080-exec-5] WARN  c.e.service.MetricsWatcher - [trace_id=trace_796400] Deprecated API endpoint /api/v1/user/get invoked by client v1.2
+2026-10-21 16:46:07.811 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_426213] Daily report aggregation started for date 2026-10-21
+2026-10-21 16:46:29.254 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_609059] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 16:47:09.501 [http-nio-8080-exec-1] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_998576] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 16:47:11.068 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_646786] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 16:47:34.835 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_804588] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 16:47:55.206 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_545190] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 16:47:58.385 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_628617] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 16:48:01.746 [http-nio-8080-exec-2] WARN  c.e.service.MetricsWatcher - [trace_id=trace_488445] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 16:48:06.053 [http-nio-8080-exec-3] WARN  c.e.service.MetricsWatcher - [trace_id=trace_654415] Deprecated API endpoint /api/v1/user/get invoked by client v1.2
+2026-10-21 16:48:18.084 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_144064] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 16:48:28.875 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_129612] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 16:49:07.147 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_126569] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 16:49:32.991 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_408680] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 16:49:49.642 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_757212] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 16:50:11.874 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_810685] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 16:50:32.312 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_698255] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 16:51:09.433 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_982858] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 16:51:47.684 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_962267] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 16:52:15.742 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_126599] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 16:52:28.783 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_548558] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 16:52:50.742 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_547693] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 16:53:24.929 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_967756] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 16:53:43.368 [http-nio-8080-exec-2] WARN  c.e.service.MetricsWatcher - [trace_id=trace_706483] Rate limit threshold reached (90/100 req/min) for client_id=c_994
+2026-10-21 16:53:58.293 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_512793] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 16:54:23.827 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_418485] Rate limit threshold reached (90/100 req/min) for client_id=c_994
+2026-10-21 16:54:34.292 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_572757] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 16:55:02.202 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_705288] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 16:55:09.780 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_991112] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 16:55:34.398 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_651527] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 16:55:54.509 [http-nio-8080-exec-7] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_626509] Exception occurred while handling request: ConnectionPoolExhausted
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Connection is not available, request timed out after 30005ms (total=50, active=50, idle=0, waiting=14)
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:604)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:194)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:99)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+2026-10-21 16:56:05.455 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_580982] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 16:56:07.593 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_836197] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 16:56:12.131 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_546879] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 16:56:53.626 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_362824] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 16:56:57.366 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_743917] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 16:56:59.839 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_771541] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 16:57:24.048 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_569940] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 16:57:29.778 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_667633] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 16:57:53.812 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_211076] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 16:58:32.112 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_709866] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 16:58:42.224 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_800075] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 16:58:53.276 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_888914] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 16:59:38.016 [http-nio-8080-exec-8] WARN  c.e.service.MetricsWatcher - [trace_id=trace_633436] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 17:00:05.147 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_475346] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 17:00:45.467 [http-nio-8080-exec-9] WARN  c.e.service.MetricsWatcher - [trace_id=trace_364680] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 17:00:56.573 [http-nio-8080-exec-2] WARN  c.e.service.MetricsWatcher - [trace_id=trace_736789] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 17:01:40.926 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_879109] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 17:02:08.611 [http-nio-8080-exec-7] WARN  c.e.service.MetricsWatcher - [trace_id=trace_117666] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 17:02:32.368 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_814044] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 17:03:01.790 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_893734] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 17:03:40.743 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_323403] Daily report aggregation started for date 2026-10-21
+2026-10-21 17:04:22.910 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_514728] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 17:05:06.281 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_504175] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 17:05:25.351 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_702315] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 17:05:54.025 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_404277] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 17:06:29.145 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_466691] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 17:06:50.186 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_996742] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 17:07:09.648 [http-nio-8080-exec-10] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_824242] Exception occurred while handling request: DatabaseTimeoutException
+org.springframework.dao.QueryTimeoutException: Statement cancelled due to client timeout
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:345)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.example.repository.InventoryRepository.updateStockBatch(InventoryRepository.java:78)
+	at com.example.service.InventoryService.syncInventory(InventoryService.java:112)
+	at com.example.cron.InventorySyncJob.execute(InventorySyncJob.java:45)
+2026-10-21 17:07:33.368 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_727923] Daily report aggregation started for date 2026-10-21
+2026-10-21 17:07:37.261 [http-nio-8080-exec-4] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_485993] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 17:08:00.806 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_167507] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 17:08:07.424 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_671171] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 17:08:23.843 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_788345] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 17:08:54.258 [http-nio-8080-exec-5] WARN  c.e.service.MetricsWatcher - [trace_id=trace_371166] Rate limit threshold reached (90/100 req/min) for client_id=c_994
+2026-10-21 17:09:34.541 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_139004] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 17:09:46.978 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_220344] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 17:10:28.190 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_716953] Daily report aggregation started for date 2026-10-21
+2026-10-21 17:10:45.848 [http-nio-8080-exec-2] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_110161] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 17:11:21.723 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_686661] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 17:11:55.107 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_673275] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 17:11:57.601 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_313225] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 17:12:08.432 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_828748] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 17:12:47.740 [http-nio-8080-exec-9] DEBUG c.e.repository.QueryLogger - [trace_id=trace_400391] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 17:13:05.468 [http-nio-8080-exec-9] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_304564] Exception occurred while handling request: ConnectionPoolExhausted
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Connection is not available, request timed out after 30005ms (total=50, active=50, idle=0, waiting=14)
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:604)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:194)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:99)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+2026-10-21 17:13:07.142 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_101403] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 17:13:51.620 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_749185] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 17:14:01.742 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_532223] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 17:14:10.901 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_455008] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 17:14:48.940 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_343976] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 17:15:23.441 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_215277] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 17:15:27.491 [http-nio-8080-exec-3] WARN  c.e.service.MetricsWatcher - [trace_id=trace_666143] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 17:16:03.570 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_718424] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 17:16:37.433 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_985031] Daily report aggregation started for date 2026-10-21
+2026-10-21 17:16:52.358 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_328234] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 17:17:14.100 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_870237] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 17:17:16.799 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_837472] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 17:17:50.452 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_988265] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 17:18:09.989 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_330842] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 17:18:49.782 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_206178] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 17:19:26.032 [http-nio-8080-exec-9] WARN  c.e.service.MetricsWatcher - [trace_id=trace_774763] Deprecated API endpoint /api/v1/user/get invoked by client v1.2
+2026-10-21 17:19:50.482 [http-nio-8080-exec-9] DEBUG c.e.repository.QueryLogger - [trace_id=trace_559776] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 17:20:19.879 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_439768] Daily report aggregation started for date 2026-10-21
+2026-10-21 17:20:54.511 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_465752] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 17:21:01.925 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_605438] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 17:21:22.316 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_144550] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 17:21:52.115 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_511815] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 17:22:00.023 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_823521] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 17:22:34.215 [http-nio-8080-exec-6] WARN  c.e.service.MetricsWatcher - [trace_id=trace_192944] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 17:23:02.687 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_989945] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 17:23:40.958 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_618989] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 17:23:58.472 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_631456] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 17:24:32.948 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_124277] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 17:25:12.362 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_706805] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 17:25:45.404 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_644688] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 17:26:28.012 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_108355] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 17:27:12.287 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_181784] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 17:27:29.160 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_706340] Daily report aggregation started for date 2026-10-21
+2026-10-21 17:27:50.953 [http-nio-8080-exec-1] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_651963] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 17:28:00.515 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_131032] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 17:28:29.727 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_756633] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 17:28:58.547 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_668078] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 17:29:00.403 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_661402] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 17:29:05.199 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_313570] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 17:29:30.136 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_701784] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 17:29:41.165 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_750349] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 17:30:09.254 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_216393] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 17:30:23.288 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_734233] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 17:30:46.206 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_423817] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 17:31:31.830 [http-nio-8080-exec-9] WARN  c.e.service.MetricsWatcher - [trace_id=trace_259033] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 17:31:40.583 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_538379] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 17:32:17.768 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_564542] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 17:32:49.474 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_990234] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 17:33:12.997 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_255060] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 17:33:36.728 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_449879] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 17:34:01.231 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_731707] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 17:34:36.454 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_240113] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 17:34:58.664 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_578509] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 17:35:15.553 [http-nio-8080-exec-6] WARN  c.e.service.MetricsWatcher - [trace_id=trace_483394] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 17:36:00.493 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_983659] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 17:36:18.583 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_757291] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 17:36:49.829 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_434865] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 17:37:12.421 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_910983] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 17:37:47.843 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_969119] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 17:38:04.791 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_328584] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 17:38:47.568 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_899991] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 17:39:30.401 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_780587] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 17:39:58.966 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_946353] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 17:40:32.902 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_820741] Daily report aggregation started for date 2026-10-21
+2026-10-21 17:40:51.870 [http-nio-8080-exec-9] DEBUG c.e.repository.QueryLogger - [trace_id=trace_414701] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 17:41:36.950 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_576795] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 17:42:18.276 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_761691] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 17:42:51.009 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_535724] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 17:43:19.481 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_104125] Daily report aggregation started for date 2026-10-21
+2026-10-21 17:43:53.287 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_658823] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 17:44:06.689 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_546857] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 17:44:22.983 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_959535] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 17:44:52.144 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_426979] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 17:44:55.240 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_496587] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 17:44:57.502 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_869994] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 17:45:10.307 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_738368] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 17:45:49.760 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_453495] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 17:46:32.918 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_732105] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 17:46:34.681 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_960159] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 17:46:51.290 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_521714] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 17:47:13.472 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_114883] Daily report aggregation started for date 2026-10-21
+2026-10-21 17:47:25.851 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_433975] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 17:47:40.601 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_335542] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 17:47:55.718 [http-nio-8080-exec-1] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_338086] Exception occurred while handling request: DatabaseTimeoutException
+org.springframework.dao.QueryTimeoutException: Statement cancelled due to client timeout
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:345)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.example.repository.InventoryRepository.updateStockBatch(InventoryRepository.java:78)
+	at com.example.service.InventoryService.syncInventory(InventoryService.java:112)
+	at com.example.cron.InventorySyncJob.execute(InventorySyncJob.java:45)
+2026-10-21 17:48:33.622 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_295481] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 17:48:45.780 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_828375] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 17:49:04.174 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_314429] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 17:49:18.679 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_401121] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 17:49:40.948 [http-nio-8080-exec-7] WARN  c.e.service.MetricsWatcher - [trace_id=trace_157703] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 17:50:08.667 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_910160] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 17:50:36.233 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_630024] Daily report aggregation started for date 2026-10-21
+2026-10-21 17:50:47.490 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_892962] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 17:51:03.932 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_612015] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 17:51:27.765 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_447093] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 17:51:57.138 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_567267] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 17:52:14.842 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_186242] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 17:52:26.190 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_658605] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 17:52:41.799 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_830495] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 17:53:01.436 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_297579] Daily report aggregation started for date 2026-10-21
+2026-10-21 17:53:28.147 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_513284] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 17:53:45.480 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_583227] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 17:54:06.674 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_843696] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 17:54:51.110 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_863699] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 17:55:33.559 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_572695] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 17:56:09.824 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_953988] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 17:56:30.382 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_634060] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 17:56:47.532 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_872409] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 17:57:10.293 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_159152] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 17:57:23.019 [http-nio-8080-exec-8] WARN  c.e.service.MetricsWatcher - [trace_id=trace_995050] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 17:57:32.451 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_669533] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 17:57:41.091 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_855898] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 17:58:08.756 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_223107] Daily report aggregation started for date 2026-10-21
+2026-10-21 17:58:46.283 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_923779] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 17:59:16.151 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_260337] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 17:59:49.987 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_930441] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 17:59:58.592 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_679199] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 18:00:24.656 [http-nio-8080-exec-9] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_868707] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 18:00:26.722 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_513719] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 18:00:49.745 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_964092] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 18:01:27.535 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_124157] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 18:01:54.139 [http-nio-8080-exec-10] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_310781] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 18:02:35.050 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_323212] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 18:02:43.932 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_493773] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 18:03:04.041 [http-nio-8080-exec-3] WARN  c.e.service.MetricsWatcher - [trace_id=trace_528231] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 18:03:38.882 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_461046] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 18:03:56.445 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_630189] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:04:28.932 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_220945] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 18:04:47.821 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_418399] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 18:05:10.717 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_920867] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 18:05:38.395 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_900706] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 18:06:23.155 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_169515] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 18:07:00.558 [http-nio-8080-exec-10] WARN  c.e.service.MetricsWatcher - [trace_id=trace_576933] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 18:07:21.003 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_649760] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 18:07:29.626 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_847149] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 18:08:00.221 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_578622] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 18:08:09.690 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_643714] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:08:28.907 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_748485] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:08:38.970 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_168305] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 18:08:59.091 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_415141] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:09:16.917 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_131092] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 18:09:24.893 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_681275] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:09:45.027 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_210263] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 18:09:51.113 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_682313] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:10:04.040 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_436062] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 18:10:40.124 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_889794] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:10:45.999 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_920822] Daily report aggregation started for date 2026-10-21
+2026-10-21 18:10:56.092 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_881885] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 18:11:01.526 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_227645] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 18:11:05.728 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_974406] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 18:11:48.850 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_191460] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:12:32.738 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_678935] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 18:13:17.032 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_151042] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 18:13:31.468 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_179466] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 18:13:58.887 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_819441] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 18:14:21.680 [http-nio-8080-exec-4] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_183362] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 18:14:40.711 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_241760] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 18:14:59.626 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_672210] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 18:15:33.162 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_759281] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:15:45.924 [http-nio-8080-exec-9] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_693255] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 18:15:51.455 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_545873] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:16:21.380 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_949191] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 18:16:48.654 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_475621] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 18:16:55.918 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_531406] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 18:17:27.210 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_747825] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:17:57.023 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_643324] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 18:18:00.499 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_250232] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 18:18:21.248 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_525062] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 18:18:27.096 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_323521] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 18:18:29.499 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_614155] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:19:05.235 [http-nio-8080-exec-4] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_327556] Exception occurred while handling request: ConnectionPoolExhausted
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Connection is not available, request timed out after 30005ms (total=50, active=50, idle=0, waiting=14)
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:604)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:194)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:99)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+2026-10-21 18:19:50.987 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_779868] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 18:20:00.637 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_864546] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 18:20:32.991 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_603468] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 18:20:47.375 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_359490] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 18:21:11.333 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_752396] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:21:33.942 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_585646] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:21:54.082 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_922728] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 18:22:35.322 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_424750] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 18:22:49.791 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_223408] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 18:23:03.821 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_630535] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 18:23:09.497 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_886166] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:23:51.600 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_733808] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 18:24:15.450 [http-nio-8080-exec-1] WARN  c.e.service.MetricsWatcher - [trace_id=trace_394896] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 18:24:31.908 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_353452] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 18:25:01.036 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_759467] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 18:25:32.607 [http-nio-8080-exec-2] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_956047] Exception occurred while handling request: ConnectionPoolExhausted
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Connection is not available, request timed out after 30005ms (total=50, active=50, idle=0, waiting=14)
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:604)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:194)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:99)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+2026-10-21 18:25:42.139 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_307179] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 18:25:53.168 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_382034] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 18:26:28.528 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_182093] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 18:27:02.652 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_881946] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 18:27:23.540 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_162940] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:27:41.370 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_457087] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 18:27:54.636 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_240245] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 18:28:35.195 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_886139] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 18:29:13.174 [http-nio-8080-exec-3] WARN  c.e.service.MetricsWatcher - [trace_id=trace_708011] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 18:29:43.965 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_703611] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 18:30:15.446 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_897707] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 18:30:21.414 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_794849] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 18:30:52.002 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_857220] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 18:31:19.428 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_561783] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 18:31:25.877 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_898782] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 18:31:37.046 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_142597] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 18:31:50.367 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_113608] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:32:19.958 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_701860] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 18:32:36.689 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_264591] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 18:32:42.147 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_701276] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 18:32:50.394 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_433749] Daily report aggregation started for date 2026-10-21
+2026-10-21 18:33:26.591 [http-nio-8080-exec-3] WARN  c.e.service.MetricsWatcher - [trace_id=trace_832564] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 18:33:41.052 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_601894] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 18:34:25.529 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_774534] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 18:34:43.593 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_210986] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:35:07.791 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_195018] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 18:35:53.031 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_523960] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 18:36:22.498 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_138628] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 18:36:51.064 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_470606] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 18:37:31.279 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_695203] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 18:37:47.363 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_933630] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 18:38:17.656 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_247159] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 18:38:36.237 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_849669] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 18:38:48.416 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_523418] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 18:39:17.104 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_595682] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 18:39:27.886 [http-nio-8080-exec-9] WARN  c.e.service.MetricsWatcher - [trace_id=trace_173205] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 18:40:07.686 [http-nio-8080-exec-6] WARN  c.e.service.MetricsWatcher - [trace_id=trace_298605] Rate limit threshold reached (90/100 req/min) for client_id=c_994
+2026-10-21 18:40:34.714 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_678693] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 18:41:16.536 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_106318] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 18:41:17.994 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_302880] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:41:59.299 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_860764] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 18:42:16.117 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_406220] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 18:42:42.787 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_600961] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 18:43:08.333 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_183603] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 18:43:31.681 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_233416] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 18:43:43.979 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_562526] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 18:43:58.938 [http-nio-8080-exec-8] WARN  c.e.service.MetricsWatcher - [trace_id=trace_945779] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 18:44:15.145 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_546013] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 18:44:58.008 [http-nio-8080-exec-7] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_166883] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 18:45:42.118 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_205433] Daily report aggregation started for date 2026-10-21
+2026-10-21 18:46:16.088 [http-nio-8080-exec-9] DEBUG c.e.repository.QueryLogger - [trace_id=trace_558577] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 18:46:58.363 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_691958] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:47:20.579 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_424171] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:48:01.083 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_921260] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:48:40.052 [http-nio-8080-exec-9] WARN  c.e.service.MetricsWatcher - [trace_id=trace_569812] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 18:49:01.761 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_496441] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 18:49:30.897 [http-nio-8080-exec-3] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_296277] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 18:49:53.055 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_208149] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 18:50:28.041 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_412908] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 18:51:02.432 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_860182] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:51:16.177 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_398661] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 18:51:42.440 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_598788] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:52:25.749 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_155567] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 18:53:03.693 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_929948] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 18:53:21.462 [http-nio-8080-exec-1] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_359406] Exception occurred while handling request: DatabaseTimeoutException
+org.springframework.dao.QueryTimeoutException: Statement cancelled due to client timeout
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:345)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.example.repository.InventoryRepository.updateStockBatch(InventoryRepository.java:78)
+	at com.example.service.InventoryService.syncInventory(InventoryService.java:112)
+	at com.example.cron.InventorySyncJob.execute(InventorySyncJob.java:45)
+2026-10-21 18:53:42.027 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_348803] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 18:53:48.879 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_347418] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 18:54:14.227 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_268796] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 18:54:53.148 [http-nio-8080-exec-6] WARN  c.e.service.MetricsWatcher - [trace_id=trace_750458] Kafka consumer lag high on partition 2: 1250 messages behind
+2026-10-21 18:55:35.520 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_869884] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 18:55:41.244 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_597103] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 18:56:02.490 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_136045] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 18:56:17.108 [http-nio-8080-exec-3] WARN  c.e.service.MetricsWatcher - [trace_id=trace_770076] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 18:56:38.355 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_926440] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 18:56:53.585 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_394351] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 18:56:56.287 [http-nio-8080-exec-6] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_154900] Exception occurred while handling request: ConnectionPoolExhausted
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Connection is not available, request timed out after 30005ms (total=50, active=50, idle=0, waiting=14)
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:604)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:194)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:99)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+2026-10-21 18:57:16.958 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_591191] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:57:24.817 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_878801] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 18:57:29.793 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_344212] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 18:57:41.368 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_287774] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 18:57:53.456 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_604912] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 18:58:08.696 [http-nio-8080-exec-9] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_265009] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 18:58:46.484 [http-nio-8080-exec-2] WARN  c.e.service.MetricsWatcher - [trace_id=trace_730397] Rate limit threshold reached (90/100 req/min) for client_id=c_994
+2026-10-21 18:58:56.379 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_787556] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 18:59:32.452 [http-nio-8080-exec-1] WARN  c.e.service.MetricsWatcher - [trace_id=trace_604909] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 18:59:39.430 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_665209] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 18:59:56.596 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_409543] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 19:00:27.236 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_768718] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 19:00:48.634 [http-nio-8080-exec-4] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_171283] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 19:00:58.047 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_410918] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 19:01:02.227 [http-nio-8080-exec-9] WARN  c.e.service.MetricsWatcher - [trace_id=trace_851851] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 19:01:34.953 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_561617] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:01:48.751 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_880085] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 19:02:32.032 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_556875] Daily report aggregation started for date 2026-10-21
+2026-10-21 19:02:45.305 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_495120] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 19:03:26.415 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_927183] Daily report aggregation started for date 2026-10-21
+2026-10-21 19:03:30.973 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_679606] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 19:04:00.845 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_622295] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 19:04:12.757 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_296383] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 19:04:16.606 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_316512] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:04:47.457 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_734910] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 19:05:18.366 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_189001] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 19:05:30.999 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_634321] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 19:05:53.142 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_176192] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 19:05:57.634 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_781368] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 19:06:42.724 [http-nio-8080-exec-5] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_971124] Exception occurred while handling request: DatabaseTimeoutException
+org.springframework.dao.QueryTimeoutException: Statement cancelled due to client timeout
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:345)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.example.repository.InventoryRepository.updateStockBatch(InventoryRepository.java:78)
+	at com.example.service.InventoryService.syncInventory(InventoryService.java:112)
+	at com.example.cron.InventorySyncJob.execute(InventorySyncJob.java:45)
+2026-10-21 19:06:50.357 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_526174] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 19:07:16.331 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_335552] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 19:07:31.495 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_991570] Daily report aggregation started for date 2026-10-21
+2026-10-21 19:08:01.509 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_337829] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 19:08:21.270 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_787795] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:08:32.968 [http-nio-8080-exec-10] WARN  c.e.service.MetricsWatcher - [trace_id=trace_557199] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 19:08:34.165 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_317153] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 19:09:18.536 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_658571] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 19:09:47.940 [http-nio-8080-exec-2] WARN  c.e.service.MetricsWatcher - [trace_id=trace_128084] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 19:10:20.212 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_378447] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 19:10:27.118 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_157182] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 19:11:05.867 [http-nio-8080-exec-10] WARN  c.e.service.MetricsWatcher - [trace_id=trace_183564] Deprecated API endpoint /api/v1/user/get invoked by client v1.2
+2026-10-21 19:11:37.239 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_980273] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 19:12:02.898 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_478237] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:12:04.049 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_482642] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 19:12:38.869 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_437173] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 19:12:51.718 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_883083] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 19:12:59.975 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_455813] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 19:13:03.312 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_218101] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 19:13:24.361 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_376797] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 19:13:26.512 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_190998] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 19:13:32.341 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_385094] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 19:14:11.971 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_749479] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 19:14:49.854 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_322486] Daily report aggregation started for date 2026-10-21
+2026-10-21 19:15:21.680 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_675324] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 19:15:49.818 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_953043] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 19:16:25.361 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_778716] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:16:44.978 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_676647] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 19:17:27.820 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_983984] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:18:11.870 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_976044] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:18:42.325 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_269748] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:19:11.954 [http-nio-8080-exec-8] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_331344] Exception occurred while handling request: DatabaseTimeoutException
+org.springframework.dao.QueryTimeoutException: Statement cancelled due to client timeout
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:345)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.example.repository.InventoryRepository.updateStockBatch(InventoryRepository.java:78)
+	at com.example.service.InventoryService.syncInventory(InventoryService.java:112)
+	at com.example.cron.InventorySyncJob.execute(InventorySyncJob.java:45)
+2026-10-21 19:19:24.509 [http-nio-8080-exec-5] WARN  c.e.service.MetricsWatcher - [trace_id=trace_681026] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 19:19:29.756 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_547207] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 19:20:03.362 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_988001] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 19:20:09.508 [http-nio-8080-exec-5] WARN  c.e.service.MetricsWatcher - [trace_id=trace_989603] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 19:20:35.404 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_581955] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 19:20:38.019 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_822019] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:21:01.671 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_971958] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 19:21:19.041 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_298244] Daily report aggregation started for date 2026-10-21
+2026-10-21 19:21:34.111 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_780941] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 19:22:12.155 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_974920] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 19:22:53.890 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_116982] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 19:23:39.854 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_457208] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 19:23:48.964 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_530350] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 19:23:55.831 [http-nio-8080-exec-5] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_963924] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 19:24:07.226 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_237791] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:24:39.774 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_998891] Daily report aggregation started for date 2026-10-21
+2026-10-21 19:24:53.856 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_406812] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 19:24:55.761 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_104420] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 19:25:17.842 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_133227] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 19:25:50.968 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_366774] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 19:26:06.129 [http-nio-8080-exec-7] WARN  c.e.service.MetricsWatcher - [trace_id=trace_199617] Kafka consumer lag high on partition 2: 1250 messages behind
+2026-10-21 19:26:29.645 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_336162] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 19:26:37.684 [http-nio-8080-exec-9] DEBUG c.e.repository.QueryLogger - [trace_id=trace_607015] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 19:26:44.070 [http-nio-8080-exec-3] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_462182] Exception occurred while handling request: DatabaseTimeoutException
+org.springframework.dao.QueryTimeoutException: Statement cancelled due to client timeout
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:345)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.example.repository.InventoryRepository.updateStockBatch(InventoryRepository.java:78)
+	at com.example.service.InventoryService.syncInventory(InventoryService.java:112)
+	at com.example.cron.InventorySyncJob.execute(InventorySyncJob.java:45)
+2026-10-21 19:26:57.714 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_722521] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 19:27:40.293 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_454647] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 19:27:59.019 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_643960] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 19:28:12.373 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_228983] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 19:28:25.769 [http-nio-8080-exec-9] DEBUG c.e.repository.QueryLogger - [trace_id=trace_604403] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 19:28:54.465 [http-nio-8080-exec-9] DEBUG c.e.repository.QueryLogger - [trace_id=trace_566890] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 19:29:24.518 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_711761] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 19:29:55.539 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_855732] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 19:30:31.149 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_571336] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 19:30:41.508 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_571533] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 19:31:06.095 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_937241] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:31:33.340 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_624416] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 19:32:11.104 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_888194] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 19:32:43.385 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_472608] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 19:33:21.566 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_731666] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:33:23.696 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_874068] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 19:33:53.835 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_741571] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 19:34:14.646 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_637160] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 19:34:42.769 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_493342] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 19:35:22.758 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_148309] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 19:35:24.441 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_212590] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 19:35:58.643 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_820592] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 19:36:35.970 [http-nio-8080-exec-1] WARN  c.e.service.MetricsWatcher - [trace_id=trace_312783] Deprecated API endpoint /api/v1/user/get invoked by client v1.2
+2026-10-21 19:36:52.348 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_600414] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 19:37:31.754 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_806380] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 19:37:38.671 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_371125] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 19:38:09.323 [http-nio-8080-exec-2] WARN  c.e.service.MetricsWatcher - [trace_id=trace_110317] Kafka consumer lag high on partition 2: 1250 messages behind
+2026-10-21 19:38:16.386 [http-nio-8080-exec-3] WARN  c.e.service.MetricsWatcher - [trace_id=trace_691024] Deprecated API endpoint /api/v1/user/get invoked by client v1.2
+2026-10-21 19:38:57.620 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_326424] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 19:38:58.884 [http-nio-8080-exec-1] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_251283] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 19:39:07.133 [http-nio-8080-exec-3] WARN  c.e.service.MetricsWatcher - [trace_id=trace_887982] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 19:39:12.694 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_455923] Daily report aggregation started for date 2026-10-21
+2026-10-21 19:39:15.218 [http-nio-8080-exec-4] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_836645] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 19:39:57.773 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_793767] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 19:40:27.713 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_419501] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 19:40:56.160 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_286689] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 19:41:41.315 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_829596] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 19:42:27.220 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_365148] Daily report aggregation started for date 2026-10-21
+2026-10-21 19:43:10.071 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_942395] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 19:43:54.845 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_495012] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 19:44:29.684 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_121429] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 19:45:02.113 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_907913] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 19:45:31.203 [http-nio-8080-exec-9] DEBUG c.e.repository.QueryLogger - [trace_id=trace_749311] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 19:46:14.672 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_226863] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 19:46:52.732 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_359326] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 19:47:08.410 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_316822] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 19:47:31.278 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_573501] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 19:48:08.817 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_756653] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 19:48:46.750 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_886904] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:48:51.715 [http-nio-8080-exec-2] WARN  c.e.service.MetricsWatcher - [trace_id=trace_839936] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 19:49:15.444 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_852614] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 19:49:26.335 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_103893] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:49:36.793 [http-nio-8080-exec-10] WARN  c.e.service.MetricsWatcher - [trace_id=trace_828418] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 19:49:51.998 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_845101] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 19:50:14.281 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_978596] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 19:50:20.166 [http-nio-8080-exec-8] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_984457] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 19:50:36.824 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_104441] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 19:51:12.282 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_557606] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 19:51:43.429 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_568899] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:51:55.990 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_443220] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 19:52:10.228 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_281798] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 19:52:18.609 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_947330] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 19:52:36.147 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_163230] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 19:52:50.357 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_433458] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 19:53:03.243 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_988427] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 19:53:39.406 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_378380] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 19:54:06.362 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_408593] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 19:54:07.739 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_195254] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 19:54:20.561 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_289481] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 19:54:34.793 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_293483] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 19:55:13.064 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_611801] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 19:55:51.934 [http-nio-8080-exec-2] WARN  c.e.service.MetricsWatcher - [trace_id=trace_628551] Kafka consumer lag high on partition 2: 1250 messages behind
+2026-10-21 19:55:57.081 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_902616] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 19:56:17.833 [http-nio-8080-exec-1] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_518523] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 19:56:55.918 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_530266] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 19:57:38.209 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_706578] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 19:57:52.729 [http-nio-8080-exec-7] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_690396] Exception occurred while handling request: DatabaseTimeoutException
+org.springframework.dao.QueryTimeoutException: Statement cancelled due to client timeout
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:345)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.example.repository.InventoryRepository.updateStockBatch(InventoryRepository.java:78)
+	at com.example.service.InventoryService.syncInventory(InventoryService.java:112)
+	at com.example.cron.InventorySyncJob.execute(InventorySyncJob.java:45)
+2026-10-21 19:58:22.814 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_178412] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 19:58:46.766 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_236265] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 19:59:32.140 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_932462] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 20:00:07.399 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_484804] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 20:00:24.424 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_704837] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 20:01:03.028 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_861163] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 20:01:14.909 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_205596] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 20:01:22.129 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_411717] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 20:01:49.051 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_686877] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 20:02:30.327 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_272218] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 20:03:01.160 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_864549] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 20:03:20.786 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_273024] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 20:03:50.115 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_294818] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 20:04:02.870 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_420288] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 20:04:16.324 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_813952] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 20:04:40.809 [http-nio-8080-exec-7] WARN  c.e.service.MetricsWatcher - [trace_id=trace_769978] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 20:04:59.243 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_570079] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 20:05:41.586 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_228079] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 20:06:13.949 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_999649] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 20:06:45.992 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_525549] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 20:06:49.356 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_235548] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 20:07:20.480 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_662841] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 20:07:36.120 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_816833] Daily report aggregation started for date 2026-10-21
+2026-10-21 20:07:52.673 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_185792] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 20:07:56.733 [http-nio-8080-exec-8] WARN  c.e.service.MetricsWatcher - [trace_id=trace_831762] Rate limit threshold reached (90/100 req/min) for client_id=c_994
+2026-10-21 20:08:25.467 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_618230] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:08:37.341 [http-nio-8080-exec-10] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_890831] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 20:08:40.895 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_335131] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 20:08:48.335 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_445883] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 20:09:20.556 [http-nio-8080-exec-9] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_171543] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 20:09:57.968 [http-nio-8080-exec-4] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_707630] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 20:10:36.471 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_432528] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 20:11:18.929 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_865511] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:11:47.906 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_438110] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 20:11:56.441 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_897493] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 20:12:08.258 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_147052] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 20:12:27.453 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_831076] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 20:13:05.117 [http-nio-8080-exec-9] WARN  c.e.service.MetricsWatcher - [trace_id=trace_673607] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 20:13:39.097 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_783987] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 20:14:04.287 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_923890] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 20:14:34.792 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_791849] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 20:15:14.547 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_461479] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 20:15:35.118 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_882741] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 20:15:55.766 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_892774] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 20:16:10.001 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_876332] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 20:16:52.040 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_319342] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 20:17:16.161 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_444355] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 20:17:38.890 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_822103] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 20:17:44.364 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_529527] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 20:18:15.801 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_121797] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:18:32.651 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_821147] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:18:50.890 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_501438] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 20:19:33.092 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_426226] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 20:19:39.893 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_529286] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 20:20:07.299 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_206613] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 20:20:19.037 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_885966] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 20:20:37.475 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_912467] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 20:21:17.354 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_933354] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 20:21:21.985 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_649069] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 20:21:35.377 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_475466] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 20:21:56.722 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_551155] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 20:21:58.774 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_304625] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 20:22:24.805 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_922800] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 20:22:31.125 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_378720] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 20:23:04.236 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_404837] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 20:23:29.623 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_577306] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 20:24:09.550 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_885337] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 20:24:44.078 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_354782] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 20:25:28.853 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_382694] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 20:26:02.131 [http-nio-8080-exec-9] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_779919] Exception occurred while handling request: DatabaseTimeoutException
+org.springframework.dao.QueryTimeoutException: Statement cancelled due to client timeout
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:345)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.example.repository.InventoryRepository.updateStockBatch(InventoryRepository.java:78)
+	at com.example.service.InventoryService.syncInventory(InventoryService.java:112)
+	at com.example.cron.InventorySyncJob.execute(InventorySyncJob.java:45)
+2026-10-21 20:26:41.217 [http-nio-8080-exec-9] DEBUG c.e.repository.QueryLogger - [trace_id=trace_742572] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 20:26:46.823 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_732314] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 20:27:18.136 [http-nio-8080-exec-2] WARN  c.e.service.MetricsWatcher - [trace_id=trace_683411] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 20:27:32.336 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_355331] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 20:28:04.771 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_161800] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 20:28:37.039 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_241589] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 20:29:17.862 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_657814] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 20:29:25.648 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_292424] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 20:29:41.875 [http-nio-8080-exec-3] WARN  c.e.service.MetricsWatcher - [trace_id=trace_395343] Kafka consumer lag high on partition 2: 1250 messages behind
+2026-10-21 20:29:51.855 [http-nio-8080-exec-5] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_141903] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 20:30:30.447 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_321980] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 20:31:02.045 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_322187] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 20:31:10.613 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_446363] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 20:31:11.990 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_397930] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 20:31:53.026 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_528858] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 20:32:18.798 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_686396] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:32:25.748 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_597307] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 20:33:02.370 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_113956] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 20:33:33.294 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_121855] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 20:33:37.274 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_760085] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 20:33:52.684 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_893355] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 20:34:05.972 [http-nio-8080-exec-9] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_367647] Exception occurred while handling request: ConnectionPoolExhausted
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Connection is not available, request timed out after 30005ms (total=50, active=50, idle=0, waiting=14)
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:604)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:194)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:99)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+2026-10-21 20:34:25.497 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_773889] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 20:34:37.280 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_164360] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 20:35:09.716 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_331885] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 20:35:38.272 [http-nio-8080-exec-8] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_829638] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 20:36:13.035 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_398631] Daily report aggregation started for date 2026-10-21
+2026-10-21 20:36:42.458 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_295705] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 20:37:24.011 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_532677] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 20:37:58.120 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_232801] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 20:38:07.266 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_152245] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 20:38:42.198 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_540623] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 20:38:59.073 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_940742] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 20:39:44.473 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_812118] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 20:40:12.359 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_409622] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 20:40:48.898 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_137793] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 20:40:55.610 [http-nio-8080-exec-9] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_334399] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 20:41:18.823 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_358140] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:41:41.736 [http-nio-8080-exec-2] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_289281] Exception occurred while handling request: ConnectionPoolExhausted
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Connection is not available, request timed out after 30005ms (total=50, active=50, idle=0, waiting=14)
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:604)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:194)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:99)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+2026-10-21 20:41:56.388 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_626797] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 20:42:06.477 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_579092] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 20:42:26.581 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_333474] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 20:42:55.841 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_872381] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:43:28.067 [http-nio-8080-exec-9] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_589588] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 20:43:33.296 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_353301] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 20:44:17.466 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_239048] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 20:44:26.396 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_803685] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 20:44:42.050 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_326848] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 20:45:02.216 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_872439] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 20:45:39.244 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_434961] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:45:58.387 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_437927] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 20:46:03.487 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_453947] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:46:47.782 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_522007] Daily report aggregation started for date 2026-10-21
+2026-10-21 20:47:23.738 [http-nio-8080-exec-9] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_894687] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 20:47:30.261 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_204685] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:47:40.381 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_922551] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 20:47:58.205 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_282323] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 20:48:30.740 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_482221] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 20:48:55.591 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_334908] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 20:48:57.631 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_999372] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 20:49:10.151 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_636831] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 20:49:46.494 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_195753] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 20:50:14.997 [http-nio-8080-exec-8] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_924884] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 20:50:16.629 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_375556] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:50:56.437 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_109403] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:51:03.988 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_112304] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 20:51:22.026 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_890201] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 20:52:07.759 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_216630] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 20:52:16.055 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_948793] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 20:52:48.540 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_347362] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 20:53:24.793 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_333442] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 20:53:40.962 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_250118] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 20:53:58.713 [http-nio-8080-exec-2] WARN  c.e.service.MetricsWatcher - [trace_id=trace_783106] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 20:54:22.339 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_647111] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 20:54:54.174 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_639127] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 20:54:57.311 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_680836] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 20:55:00.203 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_377945] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 20:55:12.643 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_987628] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 20:55:17.633 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_438324] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 20:55:50.680 [http-nio-8080-exec-7] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_282176] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 20:56:36.209 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_971269] Daily report aggregation started for date 2026-10-21
+2026-10-21 20:56:48.881 [http-nio-8080-exec-6] WARN  c.e.service.MetricsWatcher - [trace_id=trace_607944] Deprecated API endpoint /api/v1/user/get invoked by client v1.2
+2026-10-21 20:57:16.145 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_905752] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 20:57:40.593 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_567524] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 20:57:50.879 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_733111] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 20:58:13.853 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_641963] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 20:58:16.358 [http-nio-8080-exec-1] WARN  c.e.service.MetricsWatcher - [trace_id=trace_455062] Rate limit threshold reached (90/100 req/min) for client_id=c_994
+2026-10-21 20:58:50.173 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_146046] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 20:59:00.910 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_422327] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 20:59:06.260 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_511889] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 20:59:46.325 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_986734] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 20:59:55.037 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_910082] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 21:00:28.677 [http-nio-8080-exec-8] WARN  c.e.service.MetricsWatcher - [trace_id=trace_468202] Failed payment retry attempt 1 of 3 for order #ORD-99125
+2026-10-21 21:00:54.506 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_469391] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 21:01:01.706 [http-nio-8080-exec-8] WARN  c.e.service.MetricsWatcher - [trace_id=trace_894796] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 21:01:07.622 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_232596] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 21:01:46.234 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_735318] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 21:01:55.538 [http-nio-8080-exec-2] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_487033] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 21:02:01.697 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_752361] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 21:02:30.775 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_936093] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 21:03:06.284 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_711198] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 21:03:12.535 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_385731] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 21:03:24.441 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_443969] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 21:03:52.243 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_600180] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 21:04:10.525 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_671921] Daily report aggregation started for date 2026-10-21
+2026-10-21 21:04:30.381 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_584843] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 21:04:40.309 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_921547] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 21:04:41.990 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_826047] User logged in successfully [userId=usr_88204, ip=198.51.100.88]
+2026-10-21 21:05:17.110 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_607358] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 21:05:45.769 [http-nio-8080-exec-9] DEBUG c.e.repository.QueryLogger - [trace_id=trace_294621] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 21:05:51.481 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_661930] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 21:05:58.706 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_896796] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 21:06:09.524 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_209084] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 21:06:40.834 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_594090] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 21:07:19.539 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_700964] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 21:07:48.891 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_309346] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 21:08:33.938 [http-nio-8080-exec-8] WARN  c.e.service.MetricsWatcher - [trace_id=trace_297838] Slow query detected: SELECT * FROM audit_logs took 2450ms (threshold: 1000ms)
+2026-10-21 21:08:37.587 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_581453] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 21:09:07.369 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_725629] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 21:09:27.580 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_413576] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 21:09:52.403 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_899885] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 21:10:28.540 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_682277] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 21:10:41.161 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_389268] Kafka consumer lag high on partition 2: 1250 messages behind
+2026-10-21 21:11:19.870 [http-nio-8080-exec-7] DEBUG c.e.repository.QueryLogger - [trace_id=trace_208278] Evaluating JWT claims for subject=usr_10291, roles=[ROLE_USER]
+2026-10-21 21:11:25.844 [http-nio-8080-exec-1] DEBUG c.e.repository.QueryLogger - [trace_id=trace_778024] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 21:11:27.623 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_403365] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 21:12:07.436 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_746371] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 21:12:35.706 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_220023] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 21:12:45.121 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_196204] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 21:13:21.990 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_136649] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 21:13:32.367 [http-nio-8080-exec-9] DEBUG c.e.repository.QueryLogger - [trace_id=trace_867613] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 21:14:15.637 [http-nio-8080-exec-3] WARN  c.e.service.MetricsWatcher - [trace_id=trace_530292] Rate limit threshold reached (90/100 req/min) for client_id=c_994
+2026-10-21 21:14:34.538 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_627593] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 21:14:47.687 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_236829] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 21:15:09.618 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_134880] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 21:15:25.815 [http-nio-8080-exec-3] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_943191] Exception occurred while handling request: ConnectionPoolExhausted
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Connection is not available, request timed out after 30005ms (total=50, active=50, idle=0, waiting=14)
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:604)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:194)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:99)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+2026-10-21 21:16:02.730 [http-nio-8080-exec-6] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_508125] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 21:16:12.029 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_446555] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 21:16:39.079 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_906776] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 21:17:12.809 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_182291] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 21:17:43.044 [http-nio-8080-exec-3] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_230023] Exception occurred while handling request: NullPointerException
+java.lang.NullPointerException: Cannot invoke "com.example.model.Customer.getAddress()" because "customer" is null
+	at com.example.service.OrderService.validateShippingAddress(OrderService.java:189)
+	at com.example.service.OrderService.processOrder(OrderService.java:94)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:55)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+2026-10-21 21:17:57.106 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_959953] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 21:18:39.495 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_552595] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 21:19:01.474 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_626621] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 21:19:27.576 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_191606] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 21:19:32.236 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_548562] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 21:20:02.482 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_399590] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 21:20:23.675 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_775758] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 21:20:31.214 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_192676] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 21:21:16.954 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_143675] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 21:21:47.700 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_239139] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 21:22:29.326 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_765952] Order #ORD-99121 placed successfully. Total amount: $49.99
+2026-10-21 21:23:08.477 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_320187] Daily report aggregation started for date 2026-10-21
+2026-10-21 21:23:52.542 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_851245] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 21:24:33.510 [http-nio-8080-exec-8] DEBUG c.e.repository.QueryLogger - [trace_id=trace_850941] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 21:24:53.311 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_934009] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 21:25:35.427 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_407591] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 21:25:52.155 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_159524] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 21:26:37.192 [http-nio-8080-exec-4] INFO  c.e.service.CoreApplication - [trace_id=trace_470737] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 21:27:12.222 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_240065] Executing SQL: SELECT u1_0.id, u1_0.email FROM users u1_0 WHERE u1_0.email = ?
+2026-10-21 21:27:19.966 [http-nio-8080-exec-9] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_139564] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 21:27:36.191 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_929874] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 21:27:56.363 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_601729] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 21:28:32.525 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_692026] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 21:29:10.049 [http-nio-8080-exec-5] DEBUG c.e.repository.QueryLogger - [trace_id=trace_479597] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 21:29:41.522 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_506707] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 21:30:26.734 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_581142] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 21:30:37.505 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_509153] Daily report aggregation completed in 3120ms (processed 4812 rows)
+2026-10-21 21:31:22.929 [http-nio-8080-exec-9] WARN  c.e.service.MetricsWatcher - [trace_id=trace_473987] Kafka consumer lag high on partition 2: 1250 messages behind
+2026-10-21 21:31:35.298 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_187395] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 21:32:19.433 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_327043] Daily report aggregation started for date 2026-10-21
+2026-10-21 21:32:41.800 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_709738] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 21:33:06.508 [http-nio-8080-exec-2] INFO  c.e.service.CoreApplication - [trace_id=trace_903596] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 21:33:44.317 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_973941] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 21:34:08.488 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_135839] Order #ORD-99122 placed successfully. Total amount: $899.00
+2026-10-21 21:34:26.118 [http-nio-8080-exec-10] WARN  c.e.service.MetricsWatcher - [trace_id=trace_803662] Kafka consumer lag high on partition 2: 1250 messages behind
+2026-10-21 21:35:05.925 [http-nio-8080-exec-3] INFO  c.e.service.CoreApplication - [trace_id=trace_798904] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 21:35:26.262 [http-nio-8080-exec-4] DEBUG c.e.repository.QueryLogger - [trace_id=trace_371649] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 21:35:32.367 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_506649] Daily report aggregation started for date 2026-10-21
+2026-10-21 21:36:00.496 [http-nio-8080-exec-5] WARN  c.e.service.MetricsWatcher - [trace_id=trace_659340] Deprecated API endpoint /api/v1/user/get invoked by client v1.2
+2026-10-21 21:36:38.370 [http-nio-8080-exec-7] INFO  c.e.service.CoreApplication - [trace_id=trace_715154] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 21:37:22.180 [http-nio-8080-exec-3] DEBUG c.e.repository.QueryLogger - [trace_id=trace_171904] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 21:37:30.638 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_649063] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 21:37:52.973 [http-nio-8080-exec-10] INFO  c.e.service.CoreApplication - [trace_id=trace_603340] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 21:38:01.919 [http-nio-8080-exec-6] DEBUG c.e.repository.QueryLogger - [trace_id=trace_849920] HTTP request payload parsed: 4 fields, content-length=128
+2026-10-21 21:38:16.369 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_614122] Daily report aggregation started for date 2026-10-21
+2026-10-21 21:38:25.683 [http-nio-8080-exec-8] WARN  c.e.service.MetricsWatcher - [trace_id=trace_342417] High memory utilization detected: 78.4% of heap space in use
+2026-10-21 21:38:56.046 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_696587] User logged in successfully [userId=usr_10291, ip=192.168.1.102]
+2026-10-21 21:38:57.302 [http-nio-8080-exec-6] INFO  c.e.service.CoreApplication - [trace_id=trace_461367] Order #ORD-99120 placed successfully. Total amount: $129.50
+2026-10-21 21:39:34.581 [http-nio-8080-exec-10] ERROR c.e.controller.GlobalExceptionHandler - [trace_id=trace_534513] Exception occurred while handling request: PaymentGatewayException
+com.example.exception.PaymentGatewayException: Stripe API returned HTTP 504 Gateway Timeout for idempotency_key=idemp_9f82d1c
+	at com.example.gateway.StripeClient.charge(StripeClient.java:142)
+	at com.example.service.PaymentService.processPayment(PaymentService.java:67)
+	at com.example.consumer.OrderKafkaConsumer.onMessage(OrderKafkaConsumer.java:51)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1250)
+2026-10-21 21:39:44.942 [http-nio-8080-exec-10] DEBUG c.e.repository.QueryLogger - [trace_id=trace_871340] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)
+2026-10-21 21:40:16.346 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_365901] Health check status: UP [Disk: 42% free, DB: OK, Redis: OK]
+2026-10-21 21:40:44.951 [http-nio-8080-exec-5] INFO  c.e.service.CoreApplication - [trace_id=trace_914087] Cache refreshed for key 'catalog:categories:all' (took 14ms)
+2026-10-21 21:40:47.625 [http-nio-8080-exec-1] INFO  c.e.service.CoreApplication - [trace_id=trace_962901] Started Application in 4.312 seconds (JVM running for 5.12)
+2026-10-21 21:41:16.338 [http-nio-8080-exec-9] DEBUG c.e.repository.QueryLogger - [trace_id=trace_245143] Publishing event OrderCreatedEvent to internal ApplicationEventPublisher
+2026-10-21 21:41:39.968 [http-nio-8080-exec-9] INFO  c.e.service.CoreApplication - [trace_id=trace_810435] Kafka partition [orders-topic-0] offset committed at 49102
+2026-10-21 21:42:22.295 [http-nio-8080-exec-8] INFO  c.e.service.CoreApplication - [trace_id=trace_827931] Webhook notification sent to merchant_id=m_881 with status 200
+2026-10-21 21:42:49.117 [http-nio-8080-exec-4] WARN  c.e.service.MetricsWatcher - [trace_id=trace_804764] Deprecated API endpoint /api/v1/user/get invoked by client v1.2
+2026-10-21 21:43:22.633 [http-nio-8080-exec-2] DEBUG c.e.repository.QueryLogger - [trace_id=trace_649572] Redis GET 'session:sess_a1b2c3' returned 184 bytes (cache HIT)

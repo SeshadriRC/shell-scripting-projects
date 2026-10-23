@@ -1,0 +1,618 @@
+Oct 20 22:31:48 ubuntu-server CRON[21543]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 22:33:38 ubuntu-server sshd[27833]: Accepted publickey for sesha from 192.168.1.102 port 43533 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 20 22:33:38 ubuntu-server systemd-logind[989]: New session 83 of user sesha.
+Oct 20 22:33:54 ubuntu-server sshd[22365]: Failed password for invalid user admin from 185.220.101.5 port 32347 ssh2
+Oct 20 22:35:23 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 22:36:27 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 22:38:09 ubuntu-server sshd[22042]: Failed password for invalid user postgres from 185.220.101.5 port 45692 ssh2
+Oct 20 22:38:51 ubuntu-server sshd[23194]: Failed password for invalid user root from 203.0.113.195 port 32990 ssh2
+Oct 20 22:40:00 ubuntu-server sshd[26405]: Failed password for invalid user postgres from 203.0.113.195 port 51368 ssh2
+Oct 20 22:40:10 ubuntu-server sshd[21575]: Accepted publickey for developer from 192.168.1.102 port 57161 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 20 22:40:10 ubuntu-server systemd-logind[1110]: New session 63 of user developer.
+Oct 20 22:41:40 ubuntu-server sshd[21119]: Failed password for invalid user test from 185.220.101.5 port 46467 ssh2
+Oct 20 22:42:11 ubuntu-server CRON[16190]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 22:42:47 ubuntu-server sshd[22938]: Failed password for invalid user root from 203.0.113.195 port 44665 ssh2
+Oct 20 22:44:24 ubuntu-server sshd[27736]: Failed password for invalid user root from 185.220.101.5 port 58155 ssh2
+Oct 20 22:45:27 ubuntu-server sshd[28052]: Failed password for invalid user root from 185.220.101.5 port 44454 ssh2
+Oct 20 22:46:37 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 20 22:47:00 ubuntu-server sshd[16233]: Failed password for invalid user postgres from 203.0.113.195 port 43103 ssh2
+Oct 20 22:47:32 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 22:48:25 ubuntu-server CRON[28671]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 22:49:37 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 20 22:49:53 ubuntu-server sshd[31949]: Failed password for invalid user guest from 203.0.113.195 port 32724 ssh2
+Oct 20 22:51:36 ubuntu-server CRON[26899]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 22:53:24 ubuntu-server CRON[15288]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 22:55:21 ubuntu-server sshd[28180]: Failed password for invalid user guest from 203.0.113.195 port 50658 ssh2
+Oct 20 22:56:38 ubuntu-server sshd[10581]: Failed password for invalid user test from 203.0.113.195 port 51089 ssh2
+Oct 20 22:57:09 ubuntu-server CRON[25072]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 22:57:57 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 22:59:42 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 20 23:00:11 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 20 23:00:17 ubuntu-server sshd[10760]: Failed password for invalid user guest from 185.220.101.5 port 34874 ssh2
+Oct 20 23:02:08 ubuntu-server CRON[28594]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 23:03:33 ubuntu-server CRON[27450]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 23:04:46 ubuntu-server sshd[28761]: Accepted publickey for deployer from 192.168.1.102 port 53772 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 20 23:04:46 ubuntu-server systemd-logind[1128]: New session 80 of user deployer.
+Oct 20 23:05:45 ubuntu-server sshd[17319]: Accepted publickey for sesha from 192.168.1.102 port 41040 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 20 23:05:45 ubuntu-server systemd-logind[1012]: New session 20 of user sesha.
+Oct 20 23:07:10 ubuntu-server sshd[28431]: Accepted publickey for developer from 192.168.1.102 port 42180 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 20 23:07:10 ubuntu-server systemd-logind[954]: New session 52 of user developer.
+Oct 20 23:07:20 ubuntu-server sshd[29180]: Failed password for invalid user oracle from 185.220.101.5 port 46202 ssh2
+Oct 20 23:08:01 ubuntu-server sshd[16917]: Failed password for invalid user ubuntu from 203.0.113.195 port 52909 ssh2
+Oct 20 23:09:37 ubuntu-server sshd[31360]: Failed password for invalid user postgres from 203.0.113.195 port 34997 ssh2
+Oct 20 23:10:08 ubuntu-server sshd[13690]: Failed password for invalid user root from 185.220.101.5 port 56828 ssh2
+Oct 20 23:11:16 ubuntu-server sshd[14630]: Failed password for invalid user postgres from 185.220.101.5 port 57856 ssh2
+Oct 20 23:12:03 ubuntu-server sshd[19097]: Accepted publickey for deployer from 192.168.1.102 port 47645 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 20 23:12:03 ubuntu-server systemd-logind[987]: New session 60 of user deployer.
+Oct 20 23:13:24 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 20 23:14:11 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 20 23:14:39 ubuntu-server sshd[27187]: Accepted publickey for sesha from 192.168.1.102 port 43697 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 20 23:14:39 ubuntu-server systemd-logind[1036]: New session 38 of user sesha.
+Oct 20 23:14:55 ubuntu-server CRON[10417]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 23:15:33 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 20 23:16:40 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 23:18:32 ubuntu-server sshd[24224]: Accepted publickey for deployer from 192.168.1.102 port 55724 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 20 23:18:32 ubuntu-server systemd-logind[1126]: New session 34 of user deployer.
+Oct 20 23:20:07 ubuntu-server sshd[29928]: Failed password for invalid user postgres from 185.220.101.5 port 42125 ssh2
+Oct 20 23:20:16 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 20 23:21:49 ubuntu-server sshd[18745]: Failed password for invalid user ubuntu from 203.0.113.195 port 43221 ssh2
+Oct 20 23:22:35 ubuntu-server sshd[11101]: Accepted publickey for deployer from 192.168.1.102 port 47156 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 20 23:22:35 ubuntu-server systemd-logind[1068]: New session 58 of user deployer.
+Oct 20 23:24:25 ubuntu-server sshd[28267]: Failed password for invalid user test from 185.220.101.5 port 32949 ssh2
+Oct 20 23:25:53 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 20 23:27:38 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 20 23:28:47 ubuntu-server CRON[31153]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 23:30:33 ubuntu-server CRON[11299]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 23:31:06 ubuntu-server sshd[31911]: Failed password for invalid user test from 203.0.113.195 port 51462 ssh2
+Oct 20 23:31:37 ubuntu-server sshd[19897]: Failed password for invalid user ubuntu from 203.0.113.195 port 39656 ssh2
+Oct 20 23:33:34 ubuntu-server sshd[22478]: Failed password for invalid user oracle from 185.220.101.5 port 44215 ssh2
+Oct 20 23:34:57 ubuntu-server sshd[30693]: Failed password for invalid user postgres from 185.220.101.5 port 41455 ssh2
+Oct 20 23:35:46 ubuntu-server sshd[29179]: Accepted publickey for sesha from 192.168.1.102 port 52208 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 20 23:35:46 ubuntu-server systemd-logind[815]: New session 45 of user sesha.
+Oct 20 23:36:21 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 20 23:38:15 ubuntu-server CRON[26317]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 23:38:56 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 23:39:48 ubuntu-server CRON[22211]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 23:40:35 ubuntu-server sshd[20904]: Failed password for invalid user test from 185.220.101.5 port 46891 ssh2
+Oct 20 23:41:10 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 20 23:41:20 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 20 23:41:33 ubuntu-server sshd[30755]: Failed password for invalid user oracle from 185.220.101.5 port 44808 ssh2
+Oct 20 23:42:13 ubuntu-server sshd[11944]: Failed password for invalid user root from 203.0.113.195 port 34253 ssh2
+Oct 20 23:43:11 ubuntu-server sshd[16565]: Failed password for invalid user guest from 185.220.101.5 port 50960 ssh2
+Oct 20 23:44:14 ubuntu-server CRON[19654]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 23:45:44 ubuntu-server CRON[17461]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 23:47:07 ubuntu-server sshd[14211]: Accepted publickey for developer from 192.168.1.102 port 55878 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 20 23:47:07 ubuntu-server systemd-logind[1062]: New session 36 of user developer.
+Oct 20 23:48:41 ubuntu-server sshd[18280]: Failed password for invalid user ubuntu from 185.220.101.5 port 41017 ssh2
+Oct 20 23:49:08 ubuntu-server CRON[14894]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 20 23:49:13 ubuntu-server sshd[18606]: Failed password for invalid user root from 185.220.101.5 port 53137 ssh2
+Oct 20 23:50:32 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 20 23:51:18 ubuntu-server sshd[15162]: Failed password for invalid user postgres from 203.0.113.195 port 38111 ssh2
+Oct 20 23:51:39 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 20 23:52:09 ubuntu-server sshd[10795]: Accepted publickey for developer from 192.168.1.102 port 55282 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 20 23:52:09 ubuntu-server systemd-logind[1087]: New session 52 of user developer.
+Oct 20 23:52:19 ubuntu-server sshd[11587]: Failed password for invalid user guest from 203.0.113.195 port 53600 ssh2
+Oct 20 23:53:08 ubuntu-server sshd[23801]: Failed password for invalid user test from 185.220.101.5 port 43545 ssh2
+Oct 20 23:55:06 ubuntu-server sshd[28225]: Failed password for invalid user root from 203.0.113.195 port 51266 ssh2
+Oct 20 23:56:34 ubuntu-server sshd[31386]: Failed password for invalid user admin from 185.220.101.5 port 44949 ssh2
+Oct 20 23:57:57 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 20 23:58:51 ubuntu-server sshd[18269]: Failed password for invalid user oracle from 203.0.113.195 port 48709 ssh2
+Oct 21 00:00:11 ubuntu-server sshd[22233]: Accepted publickey for developer from 192.168.1.102 port 56151 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:00:11 ubuntu-server systemd-logind[824]: New session 73 of user developer.
+Oct 21 00:00:17 ubuntu-server sshd[16431]: Failed password for invalid user test from 185.220.101.5 port 37854 ssh2
+Oct 21 00:00:54 ubuntu-server CRON[21535]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 00:01:35 ubuntu-server sshd[31718]: Failed password for invalid user admin from 203.0.113.195 port 33579 ssh2
+Oct 21 00:02:51 ubuntu-server sshd[17654]: Failed password for invalid user ubuntu from 203.0.113.195 port 42354 ssh2
+Oct 21 00:04:01 ubuntu-server sshd[24722]: Failed password for invalid user oracle from 185.220.101.5 port 58362 ssh2
+Oct 21 00:04:33 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 00:06:24 ubuntu-server sshd[17137]: Failed password for invalid user oracle from 185.220.101.5 port 58514 ssh2
+Oct 21 00:06:42 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 00:07:23 ubuntu-server sshd[27010]: Failed password for invalid user admin from 185.220.101.5 port 49716 ssh2
+Oct 21 00:08:37 ubuntu-server sshd[24692]: Failed password for invalid user root from 203.0.113.195 port 36835 ssh2
+Oct 21 00:09:25 ubuntu-server sshd[10369]: Accepted publickey for deployer from 192.168.1.102 port 47735 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:09:25 ubuntu-server systemd-logind[1017]: New session 47 of user deployer.
+Oct 21 00:09:56 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 00:10:26 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 00:12:10 ubuntu-server sshd[26782]: Accepted publickey for sesha from 192.168.1.102 port 41686 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:12:10 ubuntu-server systemd-logind[1147]: New session 89 of user sesha.
+Oct 21 00:13:35 ubuntu-server sshd[27549]: Failed password for invalid user ubuntu from 185.220.101.5 port 45495 ssh2
+Oct 21 00:13:40 ubuntu-server CRON[14515]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 00:15:26 ubuntu-server CRON[17477]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 00:16:08 ubuntu-server CRON[29784]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 00:16:55 ubuntu-server CRON[16178]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 00:17:04 ubuntu-server sshd[13025]: Accepted publickey for sesha from 192.168.1.102 port 47539 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:17:04 ubuntu-server systemd-logind[1133]: New session 58 of user sesha.
+Oct 21 00:17:23 ubuntu-server sshd[29920]: Failed password for invalid user ubuntu from 203.0.113.195 port 46930 ssh2
+Oct 21 00:17:43 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 00:19:24 ubuntu-server sshd[10808]: Failed password for invalid user guest from 185.220.101.5 port 30384 ssh2
+Oct 21 00:21:11 ubuntu-server CRON[23877]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 00:21:58 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 00:23:34 ubuntu-server CRON[25679]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 00:24:42 ubuntu-server sshd[19358]: Failed password for invalid user root from 185.220.101.5 port 42778 ssh2
+Oct 21 00:25:23 ubuntu-server sshd[18865]: Failed password for invalid user postgres from 185.220.101.5 port 36960 ssh2
+Oct 21 00:26:32 ubuntu-server sshd[22304]: Failed password for invalid user postgres from 203.0.113.195 port 54338 ssh2
+Oct 21 00:28:27 ubuntu-server sshd[28794]: Failed password for invalid user test from 203.0.113.195 port 50113 ssh2
+Oct 21 00:29:29 ubuntu-server sshd[31229]: Failed password for invalid user test from 203.0.113.195 port 36691 ssh2
+Oct 21 00:30:12 ubuntu-server sshd[20417]: Accepted publickey for deployer from 192.168.1.102 port 56694 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:30:12 ubuntu-server systemd-logind[934]: New session 69 of user deployer.
+Oct 21 00:31:45 ubuntu-server sshd[11748]: Failed password for invalid user ubuntu from 185.220.101.5 port 35121 ssh2
+Oct 21 00:33:29 ubuntu-server sshd[14280]: Accepted publickey for sesha from 192.168.1.102 port 43625 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:33:29 ubuntu-server systemd-logind[1050]: New session 28 of user sesha.
+Oct 21 00:33:35 ubuntu-server CRON[27463]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 00:34:12 ubuntu-server sshd[17149]: Accepted publickey for sesha from 192.168.1.102 port 57837 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:34:12 ubuntu-server systemd-logind[1136]: New session 26 of user sesha.
+Oct 21 00:36:08 ubuntu-server sshd[30424]: Accepted publickey for deployer from 192.168.1.102 port 45553 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:36:08 ubuntu-server systemd-logind[1163]: New session 90 of user deployer.
+Oct 21 00:38:03 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 00:39:20 ubuntu-server sshd[23009]: Failed password for invalid user root from 203.0.113.195 port 56745 ssh2
+Oct 21 00:40:29 ubuntu-server sshd[28416]: Accepted publickey for developer from 192.168.1.102 port 41272 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:40:29 ubuntu-server systemd-logind[1187]: New session 78 of user developer.
+Oct 21 00:41:50 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 00:43:05 ubuntu-server sshd[27134]: Failed password for invalid user root from 185.220.101.5 port 50342 ssh2
+Oct 21 00:43:10 ubuntu-server sshd[12194]: Accepted publickey for deployer from 192.168.1.102 port 52648 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:43:10 ubuntu-server systemd-logind[843]: New session 58 of user deployer.
+Oct 21 00:44:54 ubuntu-server sshd[27240]: Failed password for invalid user admin from 203.0.113.195 port 33927 ssh2
+Oct 21 00:46:39 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 00:48:36 ubuntu-server sshd[10220]: Failed password for invalid user admin from 185.220.101.5 port 50227 ssh2
+Oct 21 00:48:51 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 00:49:38 ubuntu-server sshd[30986]: Failed password for invalid user root from 203.0.113.195 port 45627 ssh2
+Oct 21 00:50:15 ubuntu-server sshd[21113]: Accepted publickey for sesha from 192.168.1.102 port 49416 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:50:15 ubuntu-server systemd-logind[1111]: New session 86 of user sesha.
+Oct 21 00:51:59 ubuntu-server sshd[10561]: Failed password for invalid user admin from 185.220.101.5 port 47946 ssh2
+Oct 21 00:52:43 ubuntu-server sshd[29441]: Accepted publickey for developer from 192.168.1.102 port 45329 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:52:43 ubuntu-server systemd-logind[1126]: New session 84 of user developer.
+Oct 21 00:53:49 ubuntu-server sshd[24671]: Accepted publickey for sesha from 192.168.1.102 port 50000 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:53:49 ubuntu-server systemd-logind[865]: New session 30 of user sesha.
+Oct 21 00:54:14 ubuntu-server sshd[26801]: Failed password for invalid user admin from 185.220.101.5 port 31484 ssh2
+Oct 21 00:54:43 ubuntu-server sshd[10241]: Accepted publickey for deployer from 192.168.1.102 port 41796 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:54:43 ubuntu-server systemd-logind[989]: New session 66 of user deployer.
+Oct 21 00:55:48 ubuntu-server sshd[17939]: Failed password for invalid user ubuntu from 185.220.101.5 port 38617 ssh2
+Oct 21 00:56:02 ubuntu-server sshd[17130]: Accepted publickey for developer from 192.168.1.102 port 59317 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:56:02 ubuntu-server systemd-logind[877]: New session 51 of user developer.
+Oct 21 00:57:20 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 00:58:05 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 00:58:18 ubuntu-server CRON[26024]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 00:58:36 ubuntu-server sshd[29866]: Failed password for invalid user guest from 185.220.101.5 port 46811 ssh2
+Oct 21 00:58:47 ubuntu-server sshd[19049]: Accepted publickey for deployer from 192.168.1.102 port 55461 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 00:58:47 ubuntu-server systemd-logind[1143]: New session 78 of user deployer.
+Oct 21 01:00:02 ubuntu-server sshd[12602]: Failed password for invalid user ubuntu from 185.220.101.5 port 43572 ssh2
+Oct 21 01:01:37 ubuntu-server CRON[30179]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 01:01:58 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 01:02:12 ubuntu-server sshd[10466]: Failed password for invalid user root from 203.0.113.195 port 50263 ssh2
+Oct 21 01:02:42 ubuntu-server CRON[15731]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 01:03:06 ubuntu-server CRON[25638]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 01:03:50 ubuntu-server sshd[22424]: Failed password for invalid user root from 203.0.113.195 port 58733 ssh2
+Oct 21 01:04:27 ubuntu-server sshd[18118]: Failed password for invalid user guest from 203.0.113.195 port 57325 ssh2
+Oct 21 01:06:25 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 01:06:35 ubuntu-server sshd[28284]: Accepted publickey for developer from 192.168.1.102 port 47886 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:06:35 ubuntu-server systemd-logind[1024]: New session 48 of user developer.
+Oct 21 01:07:05 ubuntu-server CRON[22788]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 01:07:35 ubuntu-server sshd[10191]: Failed password for invalid user ubuntu from 185.220.101.5 port 50847 ssh2
+Oct 21 01:07:49 ubuntu-server sshd[15189]: Accepted publickey for developer from 192.168.1.102 port 44387 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:07:49 ubuntu-server systemd-logind[1033]: New session 72 of user developer.
+Oct 21 01:08:06 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 01:09:48 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 01:09:59 ubuntu-server sshd[17320]: Accepted publickey for sesha from 192.168.1.102 port 44692 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:09:59 ubuntu-server systemd-logind[1020]: New session 78 of user sesha.
+Oct 21 01:11:13 ubuntu-server sshd[20586]: Accepted publickey for deployer from 192.168.1.102 port 58295 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:11:13 ubuntu-server systemd-logind[893]: New session 77 of user deployer.
+Oct 21 01:11:23 ubuntu-server CRON[11332]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 01:12:58 ubuntu-server sshd[10645]: Failed password for invalid user guest from 185.220.101.5 port 58693 ssh2
+Oct 21 01:14:49 ubuntu-server CRON[15406]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 01:16:30 ubuntu-server sshd[24788]: Accepted publickey for sesha from 192.168.1.102 port 42666 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:16:30 ubuntu-server systemd-logind[960]: New session 44 of user sesha.
+Oct 21 01:16:41 ubuntu-server sshd[20372]: Accepted publickey for sesha from 192.168.1.102 port 56061 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:16:41 ubuntu-server systemd-logind[906]: New session 77 of user sesha.
+Oct 21 01:18:40 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 01:18:47 ubuntu-server sshd[17026]: Failed password for invalid user oracle from 185.220.101.5 port 33186 ssh2
+Oct 21 01:19:04 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 01:19:09 ubuntu-server sshd[15798]: Failed password for invalid user test from 185.220.101.5 port 51497 ssh2
+Oct 21 01:20:21 ubuntu-server sshd[30083]: Accepted publickey for developer from 192.168.1.102 port 40746 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:20:21 ubuntu-server systemd-logind[803]: New session 66 of user developer.
+Oct 21 01:21:17 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 01:22:34 ubuntu-server sshd[20865]: Failed password for invalid user ubuntu from 203.0.113.195 port 39173 ssh2
+Oct 21 01:24:06 ubuntu-server sshd[21329]: Accepted publickey for deployer from 192.168.1.102 port 53018 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:24:06 ubuntu-server systemd-logind[987]: New session 51 of user deployer.
+Oct 21 01:25:00 ubuntu-server sshd[22236]: Failed password for invalid user guest from 185.220.101.5 port 43271 ssh2
+Oct 21 01:26:10 ubuntu-server sshd[31510]: Accepted publickey for developer from 192.168.1.102 port 55208 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:26:10 ubuntu-server systemd-logind[1116]: New session 53 of user developer.
+Oct 21 01:26:26 ubuntu-server sshd[21976]: Failed password for invalid user oracle from 185.220.101.5 port 53389 ssh2
+Oct 21 01:27:08 ubuntu-server sshd[12107]: Failed password for invalid user guest from 203.0.113.195 port 38426 ssh2
+Oct 21 01:28:59 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 01:29:18 ubuntu-server sshd[25162]: Failed password for invalid user root from 185.220.101.5 port 36503 ssh2
+Oct 21 01:29:35 ubuntu-server sshd[23790]: Failed password for invalid user postgres from 185.220.101.5 port 31439 ssh2
+Oct 21 01:31:11 ubuntu-server sshd[14749]: Failed password for invalid user guest from 185.220.101.5 port 53293 ssh2
+Oct 21 01:32:32 ubuntu-server sshd[30499]: Failed password for invalid user admin from 185.220.101.5 port 57422 ssh2
+Oct 21 01:33:39 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 01:35:30 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 01:36:24 ubuntu-server sshd[14899]: Accepted publickey for deployer from 192.168.1.102 port 44265 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:36:24 ubuntu-server systemd-logind[1036]: New session 53 of user deployer.
+Oct 21 01:37:46 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 01:38:43 ubuntu-server sshd[31096]: Failed password for invalid user admin from 185.220.101.5 port 55905 ssh2
+Oct 21 01:39:37 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 01:39:46 ubuntu-server sshd[21021]: Failed password for invalid user test from 185.220.101.5 port 38143 ssh2
+Oct 21 01:40:50 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 01:41:05 ubuntu-server sshd[29875]: Failed password for invalid user root from 203.0.113.195 port 54314 ssh2
+Oct 21 01:42:01 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 01:44:01 ubuntu-server sshd[15475]: Accepted publickey for sesha from 192.168.1.102 port 52674 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:44:01 ubuntu-server systemd-logind[809]: New session 72 of user sesha.
+Oct 21 01:45:37 ubuntu-server sshd[26945]: Failed password for invalid user test from 185.220.101.5 port 51672 ssh2
+Oct 21 01:45:51 ubuntu-server CRON[26601]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 01:47:34 ubuntu-server sshd[13081]: Accepted publickey for sesha from 192.168.1.102 port 53608 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:47:34 ubuntu-server systemd-logind[1081]: New session 77 of user sesha.
+Oct 21 01:48:38 ubuntu-server sshd[21120]: Failed password for invalid user admin from 185.220.101.5 port 36460 ssh2
+Oct 21 01:49:13 ubuntu-server sshd[15027]: Accepted publickey for deployer from 192.168.1.102 port 41876 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:49:13 ubuntu-server systemd-logind[1104]: New session 88 of user deployer.
+Oct 21 01:51:09 ubuntu-server sshd[17870]: Failed password for invalid user guest from 185.220.101.5 port 43634 ssh2
+Oct 21 01:53:02 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 01:54:23 ubuntu-server sshd[24568]: Failed password for invalid user oracle from 203.0.113.195 port 41996 ssh2
+Oct 21 01:55:40 ubuntu-server sshd[19593]: Accepted publickey for deployer from 192.168.1.102 port 46162 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:55:40 ubuntu-server systemd-logind[864]: New session 58 of user deployer.
+Oct 21 01:56:52 ubuntu-server sshd[27194]: Failed password for invalid user postgres from 185.220.101.5 port 59762 ssh2
+Oct 21 01:57:52 ubuntu-server sshd[10197]: Accepted publickey for deployer from 192.168.1.102 port 44913 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 01:57:52 ubuntu-server systemd-logind[950]: New session 69 of user deployer.
+Oct 21 01:59:51 ubuntu-server sshd[19811]: Failed password for invalid user guest from 185.220.101.5 port 52720 ssh2
+Oct 21 02:00:04 ubuntu-server CRON[31603]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 02:00:15 ubuntu-server sshd[15647]: Failed password for invalid user root from 185.220.101.5 port 53547 ssh2
+Oct 21 02:01:42 ubuntu-server sshd[29600]: Failed password for invalid user postgres from 185.220.101.5 port 56172 ssh2
+Oct 21 02:02:58 ubuntu-server CRON[27113]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 02:03:52 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 02:05:24 ubuntu-server sshd[20829]: Failed password for invalid user test from 185.220.101.5 port 32392 ssh2
+Oct 21 02:07:00 ubuntu-server sshd[10050]: Accepted publickey for developer from 192.168.1.102 port 59640 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:07:00 ubuntu-server systemd-logind[1003]: New session 23 of user developer.
+Oct 21 02:07:30 ubuntu-server sshd[10673]: Accepted publickey for deployer from 192.168.1.102 port 56954 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:07:30 ubuntu-server systemd-logind[1174]: New session 70 of user deployer.
+Oct 21 02:07:41 ubuntu-server sshd[18075]: Accepted publickey for sesha from 192.168.1.102 port 43865 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:07:41 ubuntu-server systemd-logind[974]: New session 66 of user sesha.
+Oct 21 02:08:16 ubuntu-server sshd[14928]: Failed password for invalid user test from 185.220.101.5 port 30169 ssh2
+Oct 21 02:10:03 ubuntu-server CRON[16276]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 02:11:30 ubuntu-server sshd[26544]: Failed password for invalid user oracle from 203.0.113.195 port 35115 ssh2
+Oct 21 02:11:37 ubuntu-server sshd[17005]: Failed password for invalid user test from 185.220.101.5 port 39211 ssh2
+Oct 21 02:12:43 ubuntu-server sshd[31832]: Failed password for invalid user postgres from 185.220.101.5 port 43736 ssh2
+Oct 21 02:14:19 ubuntu-server sshd[16912]: Failed password for invalid user guest from 185.220.101.5 port 38514 ssh2
+Oct 21 02:15:10 ubuntu-server sshd[14940]: Accepted publickey for developer from 192.168.1.102 port 53802 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:15:10 ubuntu-server systemd-logind[1186]: New session 49 of user developer.
+Oct 21 02:15:58 ubuntu-server CRON[22496]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 02:17:58 ubuntu-server sshd[28739]: Accepted publickey for deployer from 192.168.1.102 port 59096 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:17:58 ubuntu-server systemd-logind[1107]: New session 71 of user deployer.
+Oct 21 02:19:18 ubuntu-server sshd[15479]: Failed password for invalid user root from 185.220.101.5 port 52077 ssh2
+Oct 21 02:21:01 ubuntu-server sshd[15681]: Failed password for invalid user test from 185.220.101.5 port 55644 ssh2
+Oct 21 02:21:27 ubuntu-server sshd[19645]: Accepted publickey for developer from 192.168.1.102 port 49146 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:21:27 ubuntu-server systemd-logind[1101]: New session 45 of user developer.
+Oct 21 02:22:20 ubuntu-server CRON[10941]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 02:23:44 ubuntu-server sshd[17844]: Accepted publickey for developer from 192.168.1.102 port 52693 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:23:44 ubuntu-server systemd-logind[1092]: New session 22 of user developer.
+Oct 21 02:25:36 ubuntu-server sshd[31724]: Accepted publickey for sesha from 192.168.1.102 port 50545 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:25:36 ubuntu-server systemd-logind[1067]: New session 59 of user sesha.
+Oct 21 02:26:05 ubuntu-server sshd[20493]: Accepted publickey for developer from 192.168.1.102 port 52109 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:26:05 ubuntu-server systemd-logind[1195]: New session 25 of user developer.
+Oct 21 02:26:34 ubuntu-server sshd[23926]: Failed password for invalid user guest from 185.220.101.5 port 56066 ssh2
+Oct 21 02:27:27 ubuntu-server sshd[24053]: Accepted publickey for developer from 192.168.1.102 port 47348 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:27:27 ubuntu-server systemd-logind[940]: New session 25 of user developer.
+Oct 21 02:27:57 ubuntu-server sshd[12298]: Failed password for invalid user admin from 185.220.101.5 port 59641 ssh2
+Oct 21 02:29:24 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 02:30:49 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 02:31:32 ubuntu-server sshd[21901]: Failed password for invalid user guest from 185.220.101.5 port 37632 ssh2
+Oct 21 02:32:47 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 02:33:10 ubuntu-server sshd[30710]: Accepted publickey for developer from 192.168.1.102 port 48386 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:33:10 ubuntu-server systemd-logind[1171]: New session 26 of user developer.
+Oct 21 02:34:45 ubuntu-server sshd[12318]: Failed password for invalid user root from 185.220.101.5 port 50616 ssh2
+Oct 21 02:36:37 ubuntu-server CRON[21516]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 02:37:01 ubuntu-server CRON[16599]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 02:37:08 ubuntu-server sshd[21654]: Accepted publickey for sesha from 192.168.1.102 port 41890 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:37:08 ubuntu-server systemd-logind[829]: New session 40 of user sesha.
+Oct 21 02:37:19 ubuntu-server sshd[14919]: Failed password for invalid user ubuntu from 185.220.101.5 port 34716 ssh2
+Oct 21 02:37:57 ubuntu-server sshd[30498]: Accepted publickey for developer from 192.168.1.102 port 49692 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:37:57 ubuntu-server systemd-logind[891]: New session 47 of user developer.
+Oct 21 02:38:31 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 02:39:03 ubuntu-server sshd[17744]: Failed password for invalid user test from 203.0.113.195 port 41885 ssh2
+Oct 21 02:39:20 ubuntu-server sshd[30003]: Accepted publickey for deployer from 192.168.1.102 port 48607 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:39:20 ubuntu-server systemd-logind[881]: New session 22 of user deployer.
+Oct 21 02:40:59 ubuntu-server CRON[23934]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 02:41:50 ubuntu-server sshd[20513]: Accepted publickey for deployer from 192.168.1.102 port 48147 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:41:50 ubuntu-server systemd-logind[818]: New session 83 of user deployer.
+Oct 21 02:42:34 ubuntu-server sshd[29194]: Failed password for invalid user guest from 185.220.101.5 port 37226 ssh2
+Oct 21 02:42:40 ubuntu-server sshd[24156]: Failed password for invalid user postgres from 185.220.101.5 port 46619 ssh2
+Oct 21 02:44:27 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 02:46:03 ubuntu-server sshd[20800]: Failed password for invalid user postgres from 185.220.101.5 port 46255 ssh2
+Oct 21 02:46:15 ubuntu-server sshd[14696]: Accepted publickey for deployer from 192.168.1.102 port 53915 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:46:15 ubuntu-server systemd-logind[1181]: New session 31 of user deployer.
+Oct 21 02:46:26 ubuntu-server sshd[29078]: Accepted publickey for developer from 192.168.1.102 port 52069 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:46:26 ubuntu-server systemd-logind[1112]: New session 47 of user developer.
+Oct 21 02:47:00 ubuntu-server sshd[18107]: Failed password for invalid user oracle from 185.220.101.5 port 41439 ssh2
+Oct 21 02:47:33 ubuntu-server sshd[12449]: Failed password for invalid user guest from 185.220.101.5 port 40458 ssh2
+Oct 21 02:48:57 ubuntu-server sshd[10266]: Failed password for invalid user test from 185.220.101.5 port 34261 ssh2
+Oct 21 02:49:55 ubuntu-server sshd[29479]: Failed password for invalid user guest from 185.220.101.5 port 40241 ssh2
+Oct 21 02:50:05 ubuntu-server sshd[22954]: Accepted publickey for sesha from 192.168.1.102 port 58699 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:50:05 ubuntu-server systemd-logind[1011]: New session 42 of user sesha.
+Oct 21 02:50:51 ubuntu-server sshd[15837]: Failed password for invalid user postgres from 185.220.101.5 port 46647 ssh2
+Oct 21 02:51:39 ubuntu-server sshd[17278]: Failed password for invalid user ubuntu from 203.0.113.195 port 51695 ssh2
+Oct 21 02:53:32 ubuntu-server sshd[20607]: Failed password for invalid user oracle from 185.220.101.5 port 51531 ssh2
+Oct 21 02:55:12 ubuntu-server sshd[15619]: Failed password for invalid user root from 185.220.101.5 port 44156 ssh2
+Oct 21 02:56:35 ubuntu-server sshd[27042]: Failed password for invalid user postgres from 203.0.113.195 port 32012 ssh2
+Oct 21 02:57:33 ubuntu-server sshd[17117]: Accepted publickey for sesha from 192.168.1.102 port 58705 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 02:57:33 ubuntu-server systemd-logind[1181]: New session 57 of user sesha.
+Oct 21 02:58:29 ubuntu-server sshd[22929]: Failed password for invalid user oracle from 203.0.113.195 port 53892 ssh2
+Oct 21 03:00:29 ubuntu-server sshd[15643]: Failed password for invalid user oracle from 185.220.101.5 port 39444 ssh2
+Oct 21 03:01:12 ubuntu-server sshd[11182]: Failed password for invalid user admin from 185.220.101.5 port 48520 ssh2
+Oct 21 03:01:25 ubuntu-server sshd[11370]: Failed password for invalid user guest from 203.0.113.195 port 33383 ssh2
+Oct 21 03:02:43 ubuntu-server sshd[31234]: Failed password for invalid user admin from 185.220.101.5 port 47966 ssh2
+Oct 21 03:03:42 ubuntu-server CRON[20732]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 03:04:24 ubuntu-server sshd[29641]: Failed password for invalid user admin from 203.0.113.195 port 55810 ssh2
+Oct 21 03:06:07 ubuntu-server sshd[25597]: Failed password for invalid user postgres from 203.0.113.195 port 37337 ssh2
+Oct 21 03:06:50 ubuntu-server sshd[15052]: Accepted publickey for sesha from 192.168.1.102 port 51646 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:06:50 ubuntu-server systemd-logind[1048]: New session 70 of user sesha.
+Oct 21 03:08:14 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 03:08:56 ubuntu-server sshd[11947]: Failed password for invalid user test from 185.220.101.5 port 56255 ssh2
+Oct 21 03:10:43 ubuntu-server sshd[30483]: Accepted publickey for sesha from 192.168.1.102 port 56099 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:10:43 ubuntu-server systemd-logind[818]: New session 53 of user sesha.
+Oct 21 03:12:32 ubuntu-server sshd[20200]: Failed password for invalid user ubuntu from 185.220.101.5 port 57466 ssh2
+Oct 21 03:12:47 ubuntu-server sshd[27392]: Accepted publickey for developer from 192.168.1.102 port 57913 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:12:47 ubuntu-server systemd-logind[919]: New session 74 of user developer.
+Oct 21 03:14:16 ubuntu-server sshd[21547]: Failed password for invalid user admin from 185.220.101.5 port 48643 ssh2
+Oct 21 03:15:24 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 03:15:52 ubuntu-server sshd[20872]: Failed password for invalid user oracle from 185.220.101.5 port 34261 ssh2
+Oct 21 03:16:39 ubuntu-server sshd[14753]: Failed password for invalid user root from 185.220.101.5 port 34682 ssh2
+Oct 21 03:16:51 ubuntu-server sshd[17455]: Accepted publickey for sesha from 192.168.1.102 port 57984 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:16:51 ubuntu-server systemd-logind[858]: New session 31 of user sesha.
+Oct 21 03:17:38 ubuntu-server sshd[26120]: Accepted publickey for developer from 192.168.1.102 port 57528 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:17:38 ubuntu-server systemd-logind[852]: New session 65 of user developer.
+Oct 21 03:18:31 ubuntu-server CRON[14356]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 03:19:28 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 03:21:15 ubuntu-server sshd[12181]: Accepted publickey for sesha from 192.168.1.102 port 45054 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:21:15 ubuntu-server systemd-logind[1089]: New session 68 of user sesha.
+Oct 21 03:21:26 ubuntu-server sshd[11297]: Accepted publickey for developer from 192.168.1.102 port 46283 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:21:26 ubuntu-server systemd-logind[806]: New session 85 of user developer.
+Oct 21 03:22:18 ubuntu-server sshd[16580]: Failed password for invalid user oracle from 185.220.101.5 port 49688 ssh2
+Oct 21 03:22:38 ubuntu-server sshd[20810]: Failed password for invalid user postgres from 185.220.101.5 port 30615 ssh2
+Oct 21 03:23:23 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 03:24:01 ubuntu-server sshd[23401]: Accepted publickey for developer from 192.168.1.102 port 51960 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:24:01 ubuntu-server systemd-logind[933]: New session 68 of user developer.
+Oct 21 03:25:58 ubuntu-server CRON[29975]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 03:27:03 ubuntu-server sshd[26240]: Failed password for invalid user guest from 203.0.113.195 port 46610 ssh2
+Oct 21 03:27:31 ubuntu-server sshd[10512]: Failed password for invalid user admin from 203.0.113.195 port 34344 ssh2
+Oct 21 03:27:54 ubuntu-server sshd[31205]: Accepted publickey for developer from 192.168.1.102 port 41214 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:27:54 ubuntu-server systemd-logind[1027]: New session 48 of user developer.
+Oct 21 03:29:02 ubuntu-server sshd[26156]: Failed password for invalid user postgres from 185.220.101.5 port 32789 ssh2
+Oct 21 03:29:57 ubuntu-server sshd[15114]: Failed password for invalid user ubuntu from 203.0.113.195 port 45957 ssh2
+Oct 21 03:31:09 ubuntu-server sshd[10200]: Failed password for invalid user test from 203.0.113.195 port 39533 ssh2
+Oct 21 03:31:15 ubuntu-server sshd[31315]: Accepted publickey for sesha from 192.168.1.102 port 56244 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:31:15 ubuntu-server systemd-logind[1193]: New session 77 of user sesha.
+Oct 21 03:32:14 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 03:33:16 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 03:33:47 ubuntu-server sshd[26440]: Failed password for invalid user test from 203.0.113.195 port 56719 ssh2
+Oct 21 03:35:23 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 03:35:46 ubuntu-server sshd[20740]: Accepted publickey for deployer from 192.168.1.102 port 54957 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:35:46 ubuntu-server systemd-logind[866]: New session 70 of user deployer.
+Oct 21 03:36:41 ubuntu-server sshd[28929]: Failed password for invalid user guest from 203.0.113.195 port 49572 ssh2
+Oct 21 03:38:08 ubuntu-server sshd[15746]: Failed password for invalid user oracle from 185.220.101.5 port 32302 ssh2
+Oct 21 03:39:28 ubuntu-server sshd[20467]: Failed password for invalid user root from 185.220.101.5 port 50571 ssh2
+Oct 21 03:41:04 ubuntu-server sshd[10504]: Failed password for invalid user oracle from 185.220.101.5 port 49270 ssh2
+Oct 21 03:42:20 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 03:42:51 ubuntu-server sshd[20348]: Failed password for invalid user postgres from 185.220.101.5 port 51984 ssh2
+Oct 21 03:43:17 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 03:44:30 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 03:44:51 ubuntu-server CRON[14493]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 03:46:16 ubuntu-server sshd[26479]: Failed password for invalid user oracle from 185.220.101.5 port 42654 ssh2
+Oct 21 03:46:39 ubuntu-server sshd[27916]: Accepted publickey for deployer from 192.168.1.102 port 41597 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:46:39 ubuntu-server systemd-logind[966]: New session 45 of user deployer.
+Oct 21 03:48:07 ubuntu-server sshd[30303]: Failed password for invalid user admin from 185.220.101.5 port 41245 ssh2
+Oct 21 03:49:38 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 03:50:08 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 03:51:11 ubuntu-server sshd[12348]: Failed password for invalid user postgres from 185.220.101.5 port 45809 ssh2
+Oct 21 03:52:08 ubuntu-server sshd[16995]: Accepted publickey for developer from 192.168.1.102 port 57983 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:52:08 ubuntu-server systemd-logind[921]: New session 67 of user developer.
+Oct 21 03:53:32 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 03:55:31 ubuntu-server sshd[26481]: Failed password for invalid user ubuntu from 203.0.113.195 port 43286 ssh2
+Oct 21 03:55:51 ubuntu-server sshd[31199]: Failed password for invalid user admin from 185.220.101.5 port 58714 ssh2
+Oct 21 03:56:44 ubuntu-server sshd[14641]: Accepted publickey for sesha from 192.168.1.102 port 42600 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 03:56:44 ubuntu-server systemd-logind[870]: New session 30 of user sesha.
+Oct 21 03:57:41 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 03:59:07 ubuntu-server sshd[29058]: Failed password for invalid user test from 203.0.113.195 port 43764 ssh2
+Oct 21 04:00:26 ubuntu-server sshd[22020]: Failed password for invalid user test from 185.220.101.5 port 45473 ssh2
+Oct 21 04:01:01 ubuntu-server CRON[13166]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 04:02:55 ubuntu-server sshd[24140]: Failed password for invalid user oracle from 203.0.113.195 port 35460 ssh2
+Oct 21 04:04:04 ubuntu-server sshd[23121]: Failed password for invalid user postgres from 203.0.113.195 port 55326 ssh2
+Oct 21 04:04:24 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 04:06:09 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 04:07:53 ubuntu-server sshd[12504]: Failed password for invalid user postgres from 203.0.113.195 port 39415 ssh2
+Oct 21 04:09:32 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 04:10:45 ubuntu-server sshd[31929]: Failed password for invalid user oracle from 185.220.101.5 port 43411 ssh2
+Oct 21 04:11:34 ubuntu-server sshd[29090]: Failed password for invalid user ubuntu from 185.220.101.5 port 52819 ssh2
+Oct 21 04:12:46 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 04:14:22 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 04:15:50 ubuntu-server sshd[31168]: Accepted publickey for developer from 192.168.1.102 port 44669 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 04:15:50 ubuntu-server systemd-logind[1025]: New session 31 of user developer.
+Oct 21 04:17:45 ubuntu-server sshd[21679]: Accepted publickey for deployer from 192.168.1.102 port 56678 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 04:17:45 ubuntu-server systemd-logind[964]: New session 78 of user deployer.
+Oct 21 04:18:26 ubuntu-server sshd[23643]: Failed password for invalid user test from 185.220.101.5 port 54757 ssh2
+Oct 21 04:20:11 ubuntu-server sshd[24761]: Failed password for invalid user guest from 185.220.101.5 port 30309 ssh2
+Oct 21 04:21:23 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 04:23:00 ubuntu-server CRON[23418]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 04:23:28 ubuntu-server sshd[29170]: Failed password for invalid user guest from 203.0.113.195 port 48837 ssh2
+Oct 21 04:24:25 ubuntu-server sshd[28616]: Failed password for invalid user guest from 203.0.113.195 port 56373 ssh2
+Oct 21 04:26:10 ubuntu-server CRON[28910]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 04:27:25 ubuntu-server sshd[22008]: Failed password for invalid user oracle from 203.0.113.195 port 44826 ssh2
+Oct 21 04:29:10 ubuntu-server sshd[21895]: Accepted publickey for developer from 192.168.1.102 port 48019 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 04:29:10 ubuntu-server systemd-logind[989]: New session 46 of user developer.
+Oct 21 04:29:38 ubuntu-server sshd[23156]: Accepted publickey for deployer from 192.168.1.102 port 49302 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 04:29:38 ubuntu-server systemd-logind[1066]: New session 44 of user deployer.
+Oct 21 04:30:15 ubuntu-server sshd[17534]: Accepted publickey for developer from 192.168.1.102 port 40124 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 04:30:15 ubuntu-server systemd-logind[1150]: New session 33 of user developer.
+Oct 21 04:31:09 ubuntu-server CRON[17101]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 04:32:28 ubuntu-server sshd[13324]: Failed password for invalid user ubuntu from 185.220.101.5 port 31249 ssh2
+Oct 21 04:33:19 ubuntu-server CRON[18044]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 04:34:34 ubuntu-server sshd[23108]: Accepted publickey for developer from 192.168.1.102 port 52540 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 04:34:34 ubuntu-server systemd-logind[861]: New session 67 of user developer.
+Oct 21 04:35:53 ubuntu-server CRON[12296]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 04:36:51 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 04:37:50 ubuntu-server sshd[26716]: Failed password for invalid user postgres from 185.220.101.5 port 33207 ssh2
+Oct 21 04:38:27 ubuntu-server sshd[21305]: Failed password for invalid user postgres from 185.220.101.5 port 43216 ssh2
+Oct 21 04:39:21 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 04:40:44 ubuntu-server CRON[23137]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 04:40:49 ubuntu-server sshd[21247]: Accepted publickey for sesha from 192.168.1.102 port 50417 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 04:40:49 ubuntu-server systemd-logind[1152]: New session 75 of user sesha.
+Oct 21 04:41:25 ubuntu-server sshd[30737]: Accepted publickey for deployer from 192.168.1.102 port 41522 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 04:41:25 ubuntu-server systemd-logind[1071]: New session 71 of user deployer.
+Oct 21 04:43:10 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 04:43:48 ubuntu-server sshd[18125]: Failed password for invalid user ubuntu from 203.0.113.195 port 41013 ssh2
+Oct 21 04:44:36 ubuntu-server sshd[28471]: Failed password for invalid user admin from 185.220.101.5 port 47841 ssh2
+Oct 21 04:45:21 ubuntu-server sshd[27900]: Accepted publickey for sesha from 192.168.1.102 port 51678 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 04:45:21 ubuntu-server systemd-logind[1068]: New session 84 of user sesha.
+Oct 21 04:45:56 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 04:46:31 ubuntu-server sshd[13515]: Accepted publickey for deployer from 192.168.1.102 port 59213 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 04:46:31 ubuntu-server systemd-logind[1027]: New session 56 of user deployer.
+Oct 21 04:47:24 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 04:48:57 ubuntu-server sshd[13883]: Failed password for invalid user admin from 185.220.101.5 port 46731 ssh2
+Oct 21 04:49:52 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 04:51:19 ubuntu-server sshd[11855]: Accepted publickey for deployer from 192.168.1.102 port 48032 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 04:51:19 ubuntu-server systemd-logind[944]: New session 65 of user deployer.
+Oct 21 04:52:15 ubuntu-server sshd[16153]: Failed password for invalid user ubuntu from 185.220.101.5 port 37677 ssh2
+Oct 21 04:54:01 ubuntu-server sshd[14292]: Failed password for invalid user postgres from 185.220.101.5 port 47385 ssh2
+Oct 21 04:55:34 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 04:55:39 ubuntu-server sshd[22394]: Failed password for invalid user admin from 185.220.101.5 port 43211 ssh2
+Oct 21 04:56:18 ubuntu-server sshd[27357]: Failed password for invalid user postgres from 185.220.101.5 port 42684 ssh2
+Oct 21 04:56:38 ubuntu-server sshd[20902]: Failed password for invalid user oracle from 185.220.101.5 port 53312 ssh2
+Oct 21 04:58:23 ubuntu-server sshd[27567]: Accepted publickey for deployer from 192.168.1.102 port 56118 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 04:58:23 ubuntu-server systemd-logind[1140]: New session 80 of user deployer.
+Oct 21 05:00:02 ubuntu-server sshd[29841]: Failed password for invalid user oracle from 185.220.101.5 port 45868 ssh2
+Oct 21 05:01:53 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 05:02:17 ubuntu-server sshd[20741]: Accepted publickey for developer from 192.168.1.102 port 48421 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 05:02:17 ubuntu-server systemd-logind[1085]: New session 38 of user developer.
+Oct 21 05:02:50 ubuntu-server sshd[29254]: Accepted publickey for deployer from 192.168.1.102 port 57248 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 05:02:50 ubuntu-server systemd-logind[1101]: New session 58 of user deployer.
+Oct 21 05:03:31 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 05:04:32 ubuntu-server sshd[22320]: Failed password for invalid user ubuntu from 203.0.113.195 port 56871 ssh2
+Oct 21 05:06:16 ubuntu-server sshd[18772]: Failed password for invalid user test from 203.0.113.195 port 32446 ssh2
+Oct 21 05:08:11 ubuntu-server sshd[13626]: Failed password for invalid user root from 203.0.113.195 port 46937 ssh2
+Oct 21 05:09:52 ubuntu-server sshd[26059]: Failed password for invalid user ubuntu from 185.220.101.5 port 52706 ssh2
+Oct 21 05:10:38 ubuntu-server sshd[21495]: Accepted publickey for deployer from 192.168.1.102 port 44926 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 05:10:38 ubuntu-server systemd-logind[1142]: New session 71 of user deployer.
+Oct 21 05:11:24 ubuntu-server sshd[13703]: Failed password for invalid user test from 203.0.113.195 port 44523 ssh2
+Oct 21 05:12:05 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 05:13:04 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 05:14:34 ubuntu-server sshd[16338]: Failed password for invalid user guest from 185.220.101.5 port 47166 ssh2
+Oct 21 05:15:28 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 05:16:07 ubuntu-server sshd[24033]: Failed password for invalid user guest from 185.220.101.5 port 47984 ssh2
+Oct 21 05:17:38 ubuntu-server sshd[31931]: Accepted publickey for developer from 192.168.1.102 port 47186 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 05:17:38 ubuntu-server systemd-logind[805]: New session 83 of user developer.
+Oct 21 05:18:46 ubuntu-server sshd[24092]: Accepted publickey for deployer from 192.168.1.102 port 42346 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 05:18:46 ubuntu-server systemd-logind[859]: New session 61 of user deployer.
+Oct 21 05:19:58 ubuntu-server sshd[27318]: Failed password for invalid user postgres from 185.220.101.5 port 39668 ssh2
+Oct 21 05:21:52 ubuntu-server CRON[31547]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 05:23:42 ubuntu-server sshd[19283]: Failed password for invalid user admin from 185.220.101.5 port 42761 ssh2
+Oct 21 05:25:21 ubuntu-server CRON[11198]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 05:25:54 ubuntu-server sshd[31240]: Accepted publickey for deployer from 192.168.1.102 port 50141 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 05:25:54 ubuntu-server systemd-logind[876]: New session 36 of user deployer.
+Oct 21 05:27:08 ubuntu-server sshd[14887]: Failed password for invalid user admin from 203.0.113.195 port 39109 ssh2
+Oct 21 05:27:29 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 05:29:25 ubuntu-server sshd[24337]: Failed password for invalid user oracle from 185.220.101.5 port 57936 ssh2
+Oct 21 05:29:45 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 05:30:46 ubuntu-server sshd[11519]: Failed password for invalid user root from 203.0.113.195 port 34199 ssh2
+Oct 21 05:32:39 ubuntu-server sshd[15458]: Accepted publickey for developer from 192.168.1.102 port 48212 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 05:32:39 ubuntu-server systemd-logind[1074]: New session 35 of user developer.
+Oct 21 05:33:36 ubuntu-server sshd[20184]: Failed password for invalid user postgres from 185.220.101.5 port 44411 ssh2
+Oct 21 05:35:23 ubuntu-server sshd[18777]: Failed password for invalid user admin from 203.0.113.195 port 36864 ssh2
+Oct 21 05:36:57 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 21 05:38:08 ubuntu-server sshd[14769]: Failed password for invalid user postgres from 203.0.113.195 port 32697 ssh2
+Oct 21 05:38:31 ubuntu-server CRON[14036]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 05:40:14 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 05:41:08 ubuntu-server sshd[25654]: Failed password for invalid user guest from 185.220.101.5 port 34622 ssh2
+Oct 21 05:42:50 ubuntu-server CRON[29544]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 05:43:38 ubuntu-server sshd[12917]: Accepted publickey for sesha from 192.168.1.102 port 52122 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 05:43:38 ubuntu-server systemd-logind[1180]: New session 75 of user sesha.
+Oct 21 05:44:30 ubuntu-server CRON[19415]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 05:46:19 ubuntu-server sshd[29777]: Failed password for invalid user admin from 203.0.113.195 port 35105 ssh2
+Oct 21 05:46:41 ubuntu-server sshd[26647]: Accepted publickey for developer from 192.168.1.102 port 56868 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 05:46:41 ubuntu-server systemd-logind[899]: New session 66 of user developer.
+Oct 21 05:48:30 ubuntu-server sshd[11919]: Failed password for invalid user postgres from 185.220.101.5 port 31980 ssh2
+Oct 21 05:49:27 ubuntu-server sshd[16437]: Accepted publickey for sesha from 192.168.1.102 port 42174 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 05:49:27 ubuntu-server systemd-logind[1056]: New session 59 of user sesha.
+Oct 21 05:49:53 ubuntu-server sshd[29075]: Accepted publickey for sesha from 192.168.1.102 port 50424 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 05:49:53 ubuntu-server systemd-logind[1108]: New session 24 of user sesha.
+Oct 21 05:50:58 ubuntu-server sshd[30961]: Failed password for invalid user ubuntu from 185.220.101.5 port 46548 ssh2
+Oct 21 05:52:58 ubuntu-server sshd[13725]: Failed password for invalid user admin from 185.220.101.5 port 41891 ssh2
+Oct 21 05:53:42 ubuntu-server CRON[18602]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 05:54:10 ubuntu-server sshd[16115]: Failed password for invalid user test from 203.0.113.195 port 36177 ssh2
+Oct 21 05:55:26 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 05:55:33 ubuntu-server CRON[16624]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 05:55:53 ubuntu-server sshd[10524]: Failed password for invalid user guest from 185.220.101.5 port 43006 ssh2
+Oct 21 05:56:32 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 05:57:39 ubuntu-server sshd[15211]: Failed password for invalid user postgres from 185.220.101.5 port 45567 ssh2
+Oct 21 05:59:34 ubuntu-server sshd[12584]: Accepted publickey for developer from 192.168.1.102 port 40704 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 05:59:34 ubuntu-server systemd-logind[1085]: New session 59 of user developer.
+Oct 21 06:01:08 ubuntu-server CRON[19961]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 06:01:35 ubuntu-server sshd[17067]: Failed password for invalid user root from 185.220.101.5 port 56005 ssh2
+Oct 21 06:02:51 ubuntu-server sshd[30085]: Failed password for invalid user admin from 185.220.101.5 port 36023 ssh2
+Oct 21 06:03:04 ubuntu-server sshd[26401]: Accepted publickey for sesha from 192.168.1.102 port 54923 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:03:04 ubuntu-server systemd-logind[1009]: New session 68 of user sesha.
+Oct 21 06:05:03 ubuntu-server CRON[20862]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 06:06:11 ubuntu-server sshd[29424]: Failed password for invalid user guest from 185.220.101.5 port 54313 ssh2
+Oct 21 06:07:23 ubuntu-server sshd[20429]: Failed password for invalid user oracle from 185.220.101.5 port 47363 ssh2
+Oct 21 06:08:28 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 06:10:26 ubuntu-server sshd[16623]: Failed password for invalid user test from 185.220.101.5 port 57221 ssh2
+Oct 21 06:11:01 ubuntu-server sshd[24350]: Accepted publickey for sesha from 192.168.1.102 port 42067 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:11:01 ubuntu-server systemd-logind[1069]: New session 77 of user sesha.
+Oct 21 06:12:37 ubuntu-server sshd[19829]: Failed password for invalid user test from 185.220.101.5 port 37974 ssh2
+Oct 21 06:14:15 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 06:14:31 ubuntu-server sshd[13466]: Failed password for invalid user admin from 203.0.113.195 port 39347 ssh2
+Oct 21 06:15:39 ubuntu-server sshd[13311]: Failed password for invalid user guest from 185.220.101.5 port 39945 ssh2
+Oct 21 06:16:12 ubuntu-server CRON[27447]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 06:17:07 ubuntu-server sshd[22223]: Accepted publickey for deployer from 192.168.1.102 port 56074 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:17:07 ubuntu-server systemd-logind[872]: New session 55 of user deployer.
+Oct 21 06:18:34 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 06:19:13 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 06:21:06 ubuntu-server sshd[17362]: Failed password for invalid user postgres from 185.220.101.5 port 30359 ssh2
+Oct 21 06:22:12 ubuntu-server sshd[11150]: Accepted publickey for deployer from 192.168.1.102 port 44408 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:22:12 ubuntu-server systemd-logind[852]: New session 45 of user deployer.
+Oct 21 06:23:51 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/bin/cat /var/log/syslog
+Oct 21 06:24:20 ubuntu-server sshd[27290]: Accepted publickey for developer from 192.168.1.102 port 40640 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:24:20 ubuntu-server systemd-logind[909]: New session 47 of user developer.
+Oct 21 06:25:09 ubuntu-server sshd[17853]: Accepted publickey for deployer from 192.168.1.102 port 47900 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:25:09 ubuntu-server systemd-logind[804]: New session 83 of user deployer.
+Oct 21 06:26:53 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Oct 21 06:28:07 ubuntu-server sshd[27670]: Accepted publickey for developer from 192.168.1.102 port 47363 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:28:07 ubuntu-server systemd-logind[1166]: New session 86 of user developer.
+Oct 21 06:28:15 ubuntu-server sshd[26579]: Failed password for invalid user postgres from 203.0.113.195 port 46876 ssh2
+Oct 21 06:29:53 ubuntu-server CRON[21497]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 06:31:16 ubuntu-server sshd[14961]: Failed password for invalid user guest from 185.220.101.5 port 59545 ssh2
+Oct 21 06:31:48 ubuntu-server sshd[16686]: Failed password for invalid user oracle from 185.220.101.5 port 44704 ssh2
+Oct 21 06:32:03 ubuntu-server sshd[19829]: Accepted publickey for sesha from 192.168.1.102 port 48929 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:32:03 ubuntu-server systemd-logind[1194]: New session 45 of user sesha.
+Oct 21 06:33:55 ubuntu-server CRON[26932]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 06:34:57 ubuntu-server sshd[10104]: Failed password for invalid user guest from 185.220.101.5 port 30364 ssh2
+Oct 21 06:35:06 ubuntu-server sshd[17189]: Accepted publickey for sesha from 192.168.1.102 port 54927 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:35:06 ubuntu-server systemd-logind[1167]: New session 77 of user sesha.
+Oct 21 06:36:42 ubuntu-server sshd[13497]: Failed password for invalid user root from 185.220.101.5 port 40367 ssh2
+Oct 21 06:37:15 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/app.log
+Oct 21 06:38:19 ubuntu-server CRON[20123]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 06:38:32 ubuntu-server sshd[26647]: Failed password for invalid user guest from 185.220.101.5 port 33636 ssh2
+Oct 21 06:38:47 ubuntu-server sshd[31214]: Accepted publickey for sesha from 192.168.1.102 port 55454 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:38:47 ubuntu-server systemd-logind[1163]: New session 81 of user sesha.
+Oct 21 06:39:56 ubuntu-server sshd[27738]: Accepted publickey for sesha from 192.168.1.102 port 43576 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:39:56 ubuntu-server systemd-logind[870]: New session 34 of user sesha.
+Oct 21 06:41:06 ubuntu-server sshd[12690]: Failed password for invalid user postgres from 185.220.101.5 port 38547 ssh2
+Oct 21 06:41:37 ubuntu-server sshd[14879]: Failed password for invalid user test from 185.220.101.5 port 56938 ssh2
+Oct 21 06:42:11 ubuntu-server sshd[13583]: Failed password for invalid user root from 185.220.101.5 port 38256 ssh2
+Oct 21 06:42:17 ubuntu-server sshd[10279]: Failed password for invalid user postgres from 185.220.101.5 port 33324 ssh2
+Oct 21 06:43:21 ubuntu-server sshd[21553]: Failed password for invalid user oracle from 185.220.101.5 port 43328 ssh2
+Oct 21 06:44:48 ubuntu-server CRON[21131]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 06:45:56 ubuntu-server sshd[31553]: Failed password for invalid user ubuntu from 185.220.101.5 port 58922 ssh2
+Oct 21 06:46:49 ubuntu-server sshd[28607]: Failed password for invalid user ubuntu from 185.220.101.5 port 39892 ssh2
+Oct 21 06:47:57 ubuntu-server sshd[29939]: Accepted publickey for developer from 192.168.1.102 port 56354 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:47:57 ubuntu-server systemd-logind[1136]: New session 44 of user developer.
+Oct 21 06:49:16 ubuntu-server sshd[23500]: Accepted publickey for deployer from 192.168.1.102 port 56409 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:49:16 ubuntu-server systemd-logind[1058]: New session 26 of user deployer.
+Oct 21 06:50:59 ubuntu-server sshd[28429]: Accepted publickey for deployer from 192.168.1.102 port 59154 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:50:59 ubuntu-server systemd-logind[840]: New session 60 of user deployer.
+Oct 21 06:51:54 ubuntu-server CRON[25024]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 06:53:11 ubuntu-server sudo:   sesha : TTY=pts/0 ; PWD=/home/sesha ; USER=root ; COMMAND=/usr/bin/docker ps
+Oct 21 06:54:06 ubuntu-server CRON[25349]: (root) CMD (/usr/local/bin/logrotate /etc/logrotate.conf > /dev/null 2>&1)
+Oct 21 06:55:57 ubuntu-server sshd[26124]: Accepted publickey for deployer from 192.168.1.102 port 45993 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:55:57 ubuntu-server systemd-logind[974]: New session 42 of user deployer.
+Oct 21 06:57:00 ubuntu-server sshd[22080]: Accepted publickey for deployer from 192.168.1.102 port 52371 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:57:00 ubuntu-server systemd-logind[1086]: New session 21 of user deployer.
+Oct 21 06:58:03 ubuntu-server sshd[21010]: Accepted publickey for developer from 192.168.1.102 port 50125 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:58:03 ubuntu-server systemd-logind[1164]: New session 38 of user developer.
+Oct 21 06:58:16 ubuntu-server sshd[24888]: Accepted publickey for sesha from 192.168.1.102 port 52931 ssh2: RSA SHA256:7uK+aB8/4rL... 
+Oct 21 06:58:16 ubuntu-server systemd-logind[1048]: New session 42 of user sesha.
