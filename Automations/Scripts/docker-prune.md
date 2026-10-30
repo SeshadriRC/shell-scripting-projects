@@ -123,3 +123,26 @@ exec >> "$LOGFILE" 2>&1
 Then subsequent commands automatically send their normal output and errors to the log file.
 
 Remember: `>>` appends, `>` overwrites, and `2>&1` redirects errors to the same destination as standard output.
+
+---
+
+In `docker image prune -a`, `-a` means `--all`.
+
+It removes all unused Docker images, not just dangling images.
+
+- Without `-a`: Removes only dangling images (untagged images not referenced by a container).
+- With `-a`: Removes all images not referenced by any existing container, including tagged images.
+
+```
+# Remove only dangling images
+docker image prune
+
+# Remove all unused images
+docker image prune -a
+
+# Skip confirmation prompt
+docker image prune -a -f
+```
+
+Interview point: `-a` stands for `--all`, and it removes all unused images, including tagged images. Existing containers' images are preserved.
+
